@@ -1,39 +1,36 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import model5 from "../assets/Images/model5.png";
+import React from 'react';
+import myModelImage from '../../src/assets/Images/model5.png';
 
 const Appointment = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <div className="container mx-auto max-w-7xl rounded-2xl overflow-hidden shadow-xl">
-        <div className="relative flex flex-col md:flex-row items-center">
-          <div className="md:w-full w-full relative">
-            <img
-              src={model5}
-              alt="Unique Euphoria Model"
-              className="w-full h-auto object-fill"
-              style={{
-                objectPosition: "top center",
-                maxHeight: "500px",
-              }}
-            />
+    <div className="relative w-full flex flex-col md:flex-row">
+      
 
-            <div className="absolute inset-0 bg-[#b0967c] opacity-82"></div>
-          </div>
+      <div className="w-full md:w-1/2 relative">
+        <img 
+          src={myModelImage} 
+          alt="Consultation" 
+          className="w-full md:h-[480px] object-cover object-top"
+        />
+       
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#e4d2c4aa] to-[#e4d2c4]"></div>
+      </div>
 
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-8 md:p-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-2 leading-tight text-black">
-              Have Any Questions?
-              <br />
-              Get Free Consultation
-            </h2>
-            <p className="text-sm font-medium italic mb-6 text-black">
-              Expert Advice Just a Click Away!
-            </p>
-            <button className="bg-black text-white rounded-full px-8 py-3 font-semibold transition-all duration-300 hover:bg-gray-800">
-              Get Appointment
-            </button>
-          </div>
+
+      <div className="w-full md:w-1/2 bg-[#e4d2c4] flex items-center justify-center pt-8 pb-4 md:pt-10 md:pb-6 px-6">
+        <div className="text-center md:text-left max-w-md z-10">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+            Have Any Questions?
+          </h1>
+          <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">
+            Get Free Consultation
+          </h3>
+          <p className="text-gray-700 mb-3 text-sm md:text-base">
+            Expert Advice Just a Click Away!
+          </p>
+          <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-colors duration-300 text-sm md:text-base cursor-pointer">
+            Get Appointment
+          </button>
         </div>
       </div>
     </div>

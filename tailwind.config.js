@@ -9,10 +9,12 @@ export default {
     },
     extend: {
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        cormorant: ["Cormorant Garamond", "serif"],
-        playfair: ["Playfair Display", "serif"],
-        mariposa: ["Mariposa Sans Std", "sans-serif"],
+        // inter: ["Inter", "sans-serif"],
+        // cormorant: ["Cormorant Garamond", "serif"],
+        // playfair: ["Playfair Display", "serif"],
+        // mariposa: ["Mariposa Sans Std", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        forum: ["Forum", "serif"]
       },
 
     },

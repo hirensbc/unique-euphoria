@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 /* @tailwind base; */
 /* @tailwind components; */
@@ -14,7 +15,7 @@
   --brand-text: #be9b81;
   --primary: #b48059;
 
-  font-family: var(--sans-serif, sans-serif, monospace, system-ui,);
+  /* font-family: var(--sans-serif, sans-serif, monospace, system-ui,); */
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   font-weight: 400;
@@ -39,7 +40,9 @@
   /* --color-link: #646cff; */
   /* --color-link-hover: #747bff; */
   /* --color-button: #1a1a1a; */
-  --font-roboto: "Roboto", sans-serif;
+  /* --font-roboto: "Roboto", sans-serif; */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-forum: "Forum", serif;
 }
 
 @layer base {

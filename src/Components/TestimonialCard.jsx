@@ -28,7 +28,7 @@ const TestimonialCard = () => {
             <img
               src={model4}
               alt="Hair Collection"
-              className="w-[600px] max-w-sm md:max-w-[700px] h-auto object-cover shadow-md rounded-lg"
+              className="w-[700px] max-w-sm md:max-w-[700px] h-auto object-cover shadow-md"
             />
           </div>
 

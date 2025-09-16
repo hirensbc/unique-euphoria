@@ -43,7 +43,7 @@ const InfoSection = () => {
             <img
               src={sec.img}
               alt="Hair Collection"
-              className="w-[620px] h-[500px] object-cover shadow-md"
+              className="w-[830px] h-[500px] object-cover shadow-md"
             />
           </div>
 

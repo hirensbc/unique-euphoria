@@ -48,13 +48,13 @@ const Hero = () => {
     <section className="relative lg:py-16 px-4 sm:px-6 lg:px-12 gradient-background">
       <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6 text-left">
-          <p className="text-xs sm:text-sm uppercase tracking-wide text-gray-700 font-medium">
+          <p className="text-xs sm:text-sm uppercase tracking-wide text-black font-montserrat font-semibold">
             Luxurious, Confident, and Empowering
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#6B4226] leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-forum font-bold text-[#BE9B81] leading-tight">
             Luxury Hair, <br /> Timeless Beauty
           </h1>
-          <p className="text-base sm:text-lg font-serif text-[20px] text-black max-w-md font-medium">
+          <p className="md:text-2xl font-semibold sm:text-lg font-forum text-black max-w-md font-medium">
             Premium quality hair for every woman, every style, and every
             occasion.
           </p>
@@ -71,49 +71,46 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto relative mt-12 sm:mt-16">
-
-  <div className="absolute inset-y-0 left-0 flex items-center pl-2 sm:pl-4 z-20">
-    <button
-      onClick={() => sliderRef.current.slickPrev()}
-      className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white shadow-md 
+        <div className="absolute inset-y-0 left-0 flex items-center pl-0 sm:pl-4 z-20">
+          <button
+            onClick={() => sliderRef.current.slickPrev()}
+            className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-transparent border-1
                  hover:text-white hover:bg-[var(--primary)] transition cursor-pointer duration-300 ease-in-out"
-    >
-      <IoIosArrowRoundBack className="text-xl sm:text-2xl text-black" />
-    </button>
-  </div>
-
-  <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:pr-4 z-20">
-    <button
-      onClick={() => sliderRef.current.slickNext()}
-      className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white shadow-md 
-                 hover:text-white hover:bg-[var(--primary)] transition cursor-pointer duration-300 ease-in-out"
-    >
-      <IoIosArrowRoundForward className="text-xl sm:text-2xl text-black" />
-    </button>
-  </div>
-
-
-  <Slider {...settings} className="px-4 sm:px-6" ref={sliderRef}>
-    {categories.map((item, idx) => (
-      <div key={idx} className="px-2 sm:px-3">
-        <div className="p-4 flex flex-col items-center gap-2 bg-white rounded-2xl shadow-sm hover:shadow-lg transition">
-          <img
-            src={item.img}
-            alt={item.name}
-            className="w-full h-24 sm:h-32 lg:h-36 object-cover rounded-xl"
-          />
-          <div className="flex items-center justify-between w-full mt-2">
-            <p className="text-sm sm:text-base font-medium text-gray-800">
-              {item.name}
-            </p>
-            <MdArrowOutward className="text-base sm:text-lg text-black" />
-          </div>
+          >
+            <IoIosArrowRoundBack className="text-xl sm:text-2xl text-black" />
+          </button>
         </div>
-      </div>
-    ))}
-  </Slider>
-</div>
 
+        <div className="absolute inset-y-0 md:left-22 flex items-center pr-2 sm:pr-4 z-20">
+          <button
+            onClick={() => sliderRef.current.slickNext()}
+            className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-[var(--primary)] border-1 border-[var(--primary)]
+                 hover:text-white hover:bg-[var(--primary)] transition cursor-pointer duration-300 ease-in-out"
+          >
+            <IoIosArrowRoundForward className="text-xl sm:text-2xl text-black" />
+          </button>
+        </div>
+
+        <Slider {...settings} className="px-4 md:ml-50 sm:px-6" ref={sliderRef}>
+          {categories.map((item, idx) => (
+            <div key={idx} className="px-2 sm:px-3">
+              <div className="p-4 flex flex-col items-center gap-2 bg-white rounded-2xl shadow-sm hover:shadow-lg transition">
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-full h-24 sm:h-32 lg:h-36 object-cover rounded-xl"
+                />
+                <div className="flex items-center justify-between w-full mt-2">
+                  <p className="text-sm sm:text-base font-medium text-gray-800">
+                    {item.name}
+                  </p>
+                  <MdArrowOutward className="text-base sm:text-lg text-black" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </section>
   );
 };

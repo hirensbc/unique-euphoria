@@ -27,9 +27,7 @@ const NextArrow = ({ onClick }) => (
   </button>
 );
 
-
 const RealLife = ({ title, subtitle, testimonials }) => {
-  
   const dataToShow = testimonials || [];
 
   const settings = useMemo(
@@ -59,32 +57,32 @@ const RealLife = ({ title, subtitle, testimonials }) => {
 
         <div className="relative">
           <Slider {...settings}>
-            
             {dataToShow.map((item, index) => (
-              <div key={index} className="relative px-3 group">
-                <img
-                  src={item.img}
-                  alt={`Real life showcase ${index + 1}`}
-                  className="w-full h-80 object-cover rounded-lg"
-                />
+              <>
+                <div key={index} className="relative px-3 h-[510px] group">
+                  <img
+                    src={item.img}
+                    alt={`Real life showcase ${index + 1}`}
+                    className="w-full h-[500px] object-cover rounded-[25px]"
+                  />
 
-                <div className="absolute inset-0 flex justify-center items-center">
-                  <button
-                    aria-label="Play video"
-                    className="w-12 h-12 flex items-center justify-center bg-white/80 
+                  <div className="absolute inset-0 flex justify-center items-center">
+                    <button
+                      aria-label="Play video"
+                      className="w-12 h-12 flex items-center justify-center bg-white/80 
                     rounded-full shadow-lg cursor-pointer hover:bg-[#E0AC85] 
                     hover:text-white transition"
-                  >
-                    <FaPlay className="text-black group-hover:text-white" />
-                  </button>
+                    >
+                      <FaPlay className="text-black group-hover:text-white" />
+                    </button>
+                  </div>
+                  <div className="absolute inset-0 flex justify-center items-end mb-0">
+                    <button className="bg-[#BE9B81] text-black cursor-pointer rounded-full shadow w-[250px] px-4 py-1 text-sm border-2 border-[#ECDED3] hover:bg-[#E0AC85] hover:border-2 border-[#ECDED3] hover:text-white transition">
+                      View Details
+                    </button>
+                  </div>
                 </div>
-
-                <div className="absolute inset-0 flex justify-center items-end mb-4">
-                  <button className="bg-white text-black cursor-pointer rounded-full shadow px-4 py-1 text-sm border-2 border-[#ECDED3] hover:bg-[#E0AC85] hover:border-2 border-[#ECDED3] hover:text-white transition">
-                    View Details
-                  </button>
-                </div>
-              </div>
+              </>
             ))}
           </Slider>
         </div>

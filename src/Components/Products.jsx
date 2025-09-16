@@ -87,7 +87,7 @@ const Products = () => {
   );
 
   return (
-    <section className="bg-[var(--ink)] text-white py-16 relative">
+    <section className="bg-black text-white py-16 relative">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-serif lg:text-4xl font-bold mb-3 font-mariposa">
           Explore Our Products
@@ -98,7 +98,7 @@ const Products = () => {
 
         <div className="flex justify-between items-center mb-10">
           <button
-            className="cursor-pointer px-5 py-1 rounded-full text-gray-800 bg-white font-montserrat font-medium 
+            className="cursor-pointer px-5 py-1 rounded-full text-gray-800 bg-[#be9b81] font-montserrat font-medium 
                              hover:bg-[#E0AC85] hover:text-white transition duration-300 ease-in-out"
           >
             New Arrivals

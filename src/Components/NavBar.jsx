@@ -7,23 +7,23 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex flex-col items-center w-full mb-1">
+    <header className="flex flex-col items-center w-full mb-1 font-montserrat">
       <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-4 sm:px-6 lg:px-12 border-4 border-[#E0AC85]/10 rounded-full mt-4  shadow-md w-full">
         <div className="flex items-center gap-2">
           <img src={Logo} alt="Unique Euphoria" className="h-10" />
         </div>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm sm:text-base font-medium font-montserrat">
-          <NavLink to="/" className="hover:text-[#E0AC85]">
+        <nav className="hidden md:flex items-center gap-8 text-sm sm:text-base">
+          <NavLink to="/" className="hover:text-[#7c5a3a] font-montserrat">
             Home
           </NavLink>
-          <NavLink to="/about" className="hover:text-[#E0AC85]">
+          <NavLink to="/about" className="hover:text-[#7c5a3a]">
             About
           </NavLink>
-          <NavLink to="/testimonials" className="hover:text-[#E0AC85]">
+          <NavLink to="/testimonials" className="hover:text-[#7c5a3a]">
             Testimonials
           </NavLink>
-          <NavLink to="/collection" className="hover:text-[#E0AC85]">
+          <NavLink to="/collection" className="hover:text-[#7c5a3a]">
             Collection
           </NavLink>
         </nav>
