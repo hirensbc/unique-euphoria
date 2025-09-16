@@ -10,6 +10,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        Mariposa: ["Mariposa"],
         cormorant: ["Cormorant Garamond", "serif"],
         playfair: ["Playfair Display", "serif"],
         mariposa: ["Mariposa Sans Std", "sans-serif"],
