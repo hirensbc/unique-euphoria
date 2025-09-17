@@ -80,68 +80,72 @@ const Collection = () => {
           </h1>
         </div>
       </section>
+      <section className="w-full flex flex-col justify-center items-center bg-white">
+        <Items
+          bgWhite={"bg-white"}
+          title={
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+              Luxury Hair Extensions
+            </h1>
+          }
+        />
+        <Items
+          bgWhite={"bg-white"}
+          title={
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+              Premium Wigs
+            </h1>
+          }
+        />
 
-      <Items
-        title={
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
-            Luxury Hair Extensions
-          </h1>
-        }
-      />
-      <Items
-        title={
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
-            Premium Wigs
-          </h1>
-        }
-      />
+        <div className="min-h-screen bg-gradient-to-r from-[#BE9B81] to-[#ECDED3] w-full text-black p-8 flex flex-col items-center justify-center font-inter">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+              Professionals
+            </h2>
+            <p className="text-lg md:text-xl font-inter text-gray-600 mt-2">
+              Video Tutorial By Our Professional Team
+            </p>
+          </div>
 
-      <div className="min-h-screen bg-[#ECDED3] text-black p-8 flex flex-col items-center justify-center font-inter">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
-            Professionals
-          </h2>
-          <p className="text-lg md:text-xl font-inter text-gray-600 mt-2">
-            Video Tutorial By Our Professional Team
-          </p>
-        </div>
-
-        <div className="relative w-full max-w-6xl">
-          <Slider {...settings}>
-            {videos.map((video, index) => (
-              <div key={index} className="px-3">
-                <div className="w-full bg-white rounded-3xl overflow-hidden">
-                  <div className="relative">
-                    <img
-                      src={video.image}
-                      alt={video.title}
-                      className="w-full h-auto object-cover rounded-3xl"
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-opacity-50 rounded-full p-4 cursor-pointer hover:bg-opacity-70 transition">
-                        <FaPlay className="h-10 w-10 text-white" />
+          <div className="relative w-full max-w-6xl">
+            <Slider {...settings}>
+              {videos.map((video, index) => (
+                <div key={index} className="px-3">
+                  <div className="w-full bg-white rounded-3xl overflow-hidden">
+                    <div className="relative">
+                      <img
+                        src={video.image}
+                        alt={video.title}
+                        className="w-full h-auto object-cover rounded-3xl"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="bg-opacity-50 rounded-full p-4 cursor-pointer hover:bg-opacity-70 transition">
+                          <FaPlay className="h-10 w-10 text-white" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="p-4 bg-transparent text-center">
-                    <button className="text-gray-800 border border-gray-400 rounded-full px-6 py-2 mt-2 font-medium cursor-pointer hover:text-white hover:bg-[var(--primary)] transition">
-                      View Video
-                    </button>
+                    <div className="p-4 bg-transparent text-center">
+                      <button className="text-gray-800 border border-gray-400 rounded-full px-6 py-2 mt-2 font-medium cursor-pointer hover:text-white hover:bg-[var(--primary)] transition">
+                        View Video
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
         </div>
-      </div>
 
-      <Items
-        title={
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
-            Best Seller
-          </h1>
-        }
-      />
+        <Items
+          bgWhite={"bg-white"}
+          title={
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+              Best Seller
+            </h1>
+          }
+        />
+      </section>
     </>
   );
 };

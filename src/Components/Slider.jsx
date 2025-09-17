@@ -38,7 +38,7 @@ const PrevArrow = ({ onClick }) => (
   </button>
 );
 
-const ProductSlider = ({title}) => {
+const ProductSlider = ({title, bgWhite}) => {
   const [activeCategory, setActiveCategory] = useState("All");
 
 
@@ -62,7 +62,7 @@ const ProductSlider = ({title}) => {
   };
 
   return (
-    <div className="container min-h-screen bg-[#FDFBF7] text-black p-8 flex flex-col items-center justify-center font-inter">
+    <div className={`container min-h-screen bg-[#${bgWhite}] text-black p-8 flex flex-col items-center justify-center font-inter`}>
  
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">

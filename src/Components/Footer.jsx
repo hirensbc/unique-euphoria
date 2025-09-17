@@ -131,13 +131,13 @@ export default function Footer() {
 
       <div className="w-full border-b border-gray-700"></div>
 
-      <div className="max-w-8xl py-4 mx-auto lg:px-5 flex xs:justify-center xs:items-center xs:flex-col xs:flex lg:justify-end lg:flex-row text-gray-500 text-xs md:space-x-200">
+      <div className="max-w-8xl py-4 text-white lg:px-5 flex xs:justify-center xs:items-center xs:flex-col xs:flex lg:justify-end lg:flex-row text-gray-500 text-xs md:space-x-200">
         <p className="mb-2 lg:mb-0 lg:text-base xs:text-[10px]">
           © 2025 Unique Euphoria. All rights reserved.
         </p>
-        <div className="flex space-x-10 xs:space-x-1 sm:block lg:mt-0 lg:justify-end">
+        <div className="flex space-x-10 xs:space-x-1 sm:block lg:mt-0 lg:justify-end ">
           {/* <div className="flex space-x-6 mt-2 lg:mt-0 justify-center lg:justify-end"> */}
-          <a href="#" className="hover:underline">
+          <a href="#" className="hover:underline mr-5">
             Terms and Condition
           </a>
           <a href="#" className="hover:underline">
