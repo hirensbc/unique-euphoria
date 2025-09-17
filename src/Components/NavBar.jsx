@@ -3,7 +3,7 @@ import Logo from "../assets/Images/Logo.png";
 import { NavLink } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 
-const Navbar = () => {
+const Navbar = ({ textColor = "text-black" }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -14,7 +14,7 @@ const Navbar = () => {
           <img src={Logo} alt="Unique Euphoria" className="h-10" />
         </div>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm sm:text-base">
+        <nav className={`hidden md:flex items-center gap-8 text-sm sm:text-base ${textColor}`}>
           <NavLink to="/" className="hover:text-[#7c5a3a] font-montserrat">
             Home
           </NavLink>

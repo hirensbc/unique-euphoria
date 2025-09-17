@@ -7,11 +7,11 @@ import Appointment from '../Components/Appointment'
 import InfoSection from '../Components/InfoSection'
 import Icon from '../Components/Icon'
 import Testimonial from '../Components/Testimonial'
-import Navbar from '../Components/NavBar'
+import NavBar from '../Components/NavBar'
 const Home = () => {
   return (
     <>
-    <Navbar />
+    <NavBar textColor="text-black"/>
     <Hero />
     <Products />
     <InfoSection />

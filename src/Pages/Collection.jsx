@@ -39,7 +39,6 @@ const PrevArrow = ({ onClick }) => (
 );
 
 const Collection = () => {
-  
   const videos = useMemo(
     () => [
       { image: model15, title: "Video Tutorial By Our Professional Team" },
@@ -66,15 +65,13 @@ const Collection = () => {
 
   return (
     <>
-  
+      <div className="absolute top-0 left-0 w-full z-50">
+        <NavBar textColor="text-white" />
+      </div>
       <section
         className="w-full h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
         style={{ backgroundImage: `url(${CollectionImg})` }}
       >
-        <div className="absolute top-0 left-0 w-full z-50">
-          <NavBar />
-        </div>
-
         <div className="absolute inset-0 bg-opacity-40"></div>
 
         <div className="relative z-10 text-center">
@@ -84,8 +81,20 @@ const Collection = () => {
         </div>
       </section>
 
-      <Items title={<h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">Luxury Hair Extensions</h1>} />
-      <Items title={<h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">Premium Wigs</h1>} />
+      <Items
+        title={
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+            Luxury Hair Extensions
+          </h1>
+        }
+      />
+      <Items
+        title={
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+            Premium Wigs
+          </h1>
+        }
+      />
 
       <div className="min-h-screen bg-[#ECDED3] text-black p-8 flex flex-col items-center justify-center font-inter">
         <div className="text-center mb-12">
@@ -126,7 +135,13 @@ const Collection = () => {
         </div>
       </div>
 
-      <Items title={<h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">Best Seller</h1>} />
+      <Items
+        title={
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+            Best Seller
+          </h1>
+        }
+      />
     </>
   );
 };

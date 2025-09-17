@@ -11,8 +11,8 @@ import model14 from "../assets/Images/model14.png";
 const About = () => {
   return (
     <>
-      <NavBar />
-      <section className=" container flex py-16 px-4 sm:px-6 lg:px-12">
+      <NavBar textColor="text-black" />
+      <section className=" container flex py-16 px-4 sm:px-6 lg:px-12 gradient-background">
         <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-2 gap-12 items-start">
           <div className="text-left space-y-6">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
@@ -39,7 +39,7 @@ const About = () => {
               <img
                 src={model14}
                 alt="Model with hair"
-                className="w-full rounded-xl shadow-lg object-fill lg:h-60"
+                className="w-full rounded-xl shadow-lg object-fill lg:h-60 brightness-65"
               />
               <div className="w-full   bg-black rounded-xl shadow-lg flex flex-col justify-center items-center text-white p-6">
                 <span className="text-5xl lg:text-6xl font-serif font-bold">
