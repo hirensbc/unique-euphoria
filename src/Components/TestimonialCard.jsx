@@ -33,10 +33,10 @@ const TestimonialCard = () => {
           </div>
 
           <div className="w-full md:w-1/2 mx-9">
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 font-serif text-center md:text-left">
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 font-Mariposa text-center md:text-left">
               Love And Care
             </h1>
-            <p className="text-gray-600 mb-6 text-justify text-sm md:text-base w-90">
+            <p className="text-gray-600 mb-6 text-justify text-sm md:text-base w-90 font-montserrat">
               At Unique Euphoria, we believe beauty is about confidence and
               empowerment. We support communities through charitable
               initiatives, helping individuals with hair loss and empowering
@@ -45,7 +45,7 @@ const TestimonialCard = () => {
               a time.
             </p>
             <div className="flex justify-center md:justify-start">
-              <button className="px-6 py-2 bg-[var(--primary)] text-white rounded-full cursor-pointer hover:bg-[#E0AC85] hover:scale-105 transition-all duration-300">
+              <button className="px-6 py-2 bg-[var(--primary)] text-white rounded-full cursor-pointer hover:bg-[#E0AC85] hover:scale-105 transition-all duration-300 font-montserrat">
                 View Collection
               </button>
             </div>

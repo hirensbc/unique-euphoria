@@ -36,7 +36,7 @@ const Testimonials = () => {
         {/* <div className="absolute inset-0 bg-opacity-40"></div> */}
         {/* <div className="relative z-10 text-center">
         </div> */}
-          <h1 className="text-white text-4xl md:text-6xl font-playfair font-bold mb-4">
+          <h1 className="text-white text-4xl md:text-6xl font-Mariposa font-bold mb-4">
             Client Testimonials
           </h1>
       </section>

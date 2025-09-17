@@ -9,48 +9,33 @@ const features = [
   { id: 5, icon: <FaUndo />, title: "Hassle-Free Return Policy" },
 ];
 
-const WhyUniqueEuphoria = () => {
+const Icon = () => {
   return (
     <section className="bg-white py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif text-black mb-2">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-Mariposa text-black mb-2">
           Why Unique Euphoria
         </h2>
-        <p className="text-gray-600 mb-10 sm:mb-12">
+        <p className="text-gray-600 mb-10 sm:mb-12 font-montserrat">
           The Unique Euphoria Difference
         </p>
 
+        <div className="relative sm:flex sm:justify-around sm:items-center">
+          <div className="absolute hidden sm:block top-1/2 left-0 right-0 h-px bg-gray-300 z-0"></div>
 
-        <div>
-          
-          <div className="flex sm:hidden overflow-x-auto space-x-6 scrollbar-hide px-2">
+          <div className="flex flex-col sm:flex-row sm:justify-around sm:space-x-0 space-y-8 sm:space-y-0">
             {features.map((feature) => (
               <div
                 key={feature.id}
-                className="flex-shrink-0 flex flex-col items-center text-center w-28"
+                className="flex-shrink-0 flex flex-col items-center text-center relative z-10"
               >
                 <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md border border-gray-300">
-                  <span className="text-2xl text-[#BE9B81]">{feature.icon}</span>
+                  <span className="text-2xl text-[#BE9B81]">
+                    {feature.icon}
+                  </span>
                 </div>
-                <p className="mt-3 text-xs font-medium text-gray-800">
-                  {feature.title}
-                </p>
-              </div>
-            ))}
-          </div>
 
-          
-          <div className="hidden sm:grid grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-10 lg:gap-12">
-            {features.map((feature) => (
-              <div
-                key={feature.id}
-                className="flex flex-col items-center text-center"
-              >
-                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md border border-gray-300">
-                  <span className="text-2xl text-[#BE9B81]">{feature.icon}</span>
-                </div>
-                <p className="mt-3 text-sm sm:text-base font-medium text-gray-800">
+                <p className="mt-3 text-xs sm:text-sm lg:text-base font-medium font-montserrat text-gray-800">
                   {feature.title}
                 </p>
               </div>
@@ -62,4 +47,4 @@ const WhyUniqueEuphoria = () => {
   );
 };
 
-export default WhyUniqueEuphoria;
+export default Icon;

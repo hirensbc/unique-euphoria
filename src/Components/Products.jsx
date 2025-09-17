@@ -89,10 +89,10 @@ const Products = () => {
   return (
     <section className="bg-black text-white py-16 relative">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-serif lg:text-4xl font-bold mb-3 font-mariposa">
+        <h2 className="text-3xl font-Mariposa lg:text-4xl font-bold mb-3 font-mariposa">
           Explore Our Products
         </h2>
-        <p className="text-gray-300 mb-8 font-montserrat">
+        <p className="text-gray-300 mb-8 font-montserrat ">
           Discover the Perfect Blend of Quality, Innovation, and Style
         </p>
 

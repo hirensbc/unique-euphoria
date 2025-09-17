@@ -75,7 +75,7 @@ const Collection = () => {
         <div className="absolute inset-0 bg-opacity-40"></div>
 
         <div className="relative z-10 text-center">
-          <h1 className="text-white text-4xl md:text-6xl font-serif font-bold mb-4">
+          <h1 className="text-white text-4xl md:text-6xl font-Mariposa font-bold mb-4">
             Featured Collections
           </h1>
         </div>
@@ -83,14 +83,14 @@ const Collection = () => {
 
       <Items
         title={
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+          <h1 className="text-4xl md:text-5xl font-Mariposa font-bold text-[#333]">
             Luxury Hair Extensions
           </h1>
         }
       />
       <Items
         title={
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+          <h1 className="text-4xl md:text-5xl font-Mariposa font-bold text-[#333]">
             Premium Wigs
           </h1>
         }
@@ -98,10 +98,10 @@ const Collection = () => {
 
       <div className="min-h-screen bg-[#ECDED3] text-black p-8 flex flex-col items-center justify-center font-inter">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+          <h2 className="text-4xl md:text-5xl font-Mariposa font-bold text-[#333]">
             Professionals
           </h2>
-          <p className="text-lg md:text-xl font-inter text-gray-600 mt-2">
+          <p className="text-lg md:text-xl  text-gray-600 mt-2">
             Video Tutorial By Our Professional Team
           </p>
         </div>
@@ -137,7 +137,7 @@ const Collection = () => {
 
       <Items
         title={
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+          <h1 className="text-4xl md:text-5xl font-Mariposa font-bold text-[#333]">
             Best Seller
           </h1>
         }

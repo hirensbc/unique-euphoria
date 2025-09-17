@@ -62,10 +62,10 @@ const ProductSlider = ({title}) => {
   };
 
   return (
-    <div className="container min-h-screen bg-[#FDFBF7] text-black p-8 flex flex-col items-center justify-center font-inter">
+    <div className="container min-h-screen bg-[#FDFBF7] text-black p-8 flex flex-col items-center justify-center ">
  
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+        <h2 className="text-4xl md:text-5xl font-mariposa font-bold text-[#333]">
           {title}
         </h2>
 
@@ -75,7 +75,7 @@ const ProductSlider = ({title}) => {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-6 py-2 rounded-full font-medium cursor-pointer border transition-all duration-300
+              className={`px-6 py-2 rounded-full font-medium cursor-pointer border transition-all duration-300 font-montserrat
                 ${
                   activeCategory === cat
                     ? "bg-black text-white border-black scale-105"
@@ -98,14 +98,14 @@ const ProductSlider = ({title}) => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-80 object-cover rounded-3xl"
+                    className="w-full h-80 object-cover rounded-3xl font-montserrat"
                   />
                   <div className="absolute top-4 right-4 bg-[#C0A887] text-white text-xs font-semibold px-4 py-2 rounded-full">
                     {product.discount}
                   </div>
                 </div>
                 <div className="p-4 bg-transparent text-center">
-                  <h3 className="text-lg text-gray-800 mt-2">{product.name}</h3>
+                  <h3 className="text-lg text-gray-800 mt-2 font-mariposa">{product.name}</h3>
                 </div>
               </div>
             </div>

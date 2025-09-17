@@ -48,7 +48,7 @@ const RealLife = ({ title, subtitle, testimonials }) => {
   );
 
   return (
-    <section className="py-16 max-w-7xl mx-auto bg-gradient-to-r from-[#b48059] to-[#ffffff]  ">
+    <section className="py-16 max-w-7xl mx-auto bg-gradient-to-r fon from-[#b48059] to-[#ffffff]  ">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl lg:text-4xl font-bold font-mariposa mb-3 text-black">
           {title}

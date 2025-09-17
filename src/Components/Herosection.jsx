@@ -54,7 +54,7 @@ const Hero = () => {
           <h1 className="2xl:text-7xl md:text-4xl  font-Mariposa font-bold text-[#BE9B81] leading-tight">
             Luxury Hair, <br /> Timeless Beauty
           </h1>
-          <p className="md:text-2xl font-semibold sm:text-lg font-forum text-black max-w-md font-medium">
+          <p className="md:text-2xl font-semibold sm:text-lg font-forum text-black max-w-md ">
             Premium quality hair for every woman, every style, and every
             occasion.
           </p>

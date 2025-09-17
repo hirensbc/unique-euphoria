@@ -51,8 +51,8 @@ const Testimonial = () => {
     <div className="bg-black">
       <div className="bg-black text-white py-16 px-6 lg:px-20 max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-semibold mb-2">Customer Testimonials</h2>
-          <p className="text-gray-400">Real Stories from Happy Customers</p>
+          <h2 className="text-3xl font-semibold mb-2 font-mariposa">Customer Testimonials</h2>
+          <p className="text-gray-400 font-montserrat">Real Stories from Happy Customers</p>
         </div>
 
         <Slider {...settings} ref={sliderRef}>
@@ -74,7 +74,7 @@ const Testimonial = () => {
                   <p className="text-gray-300 mb-6 leading-relaxed">
                     {item.text}
                   </p>
-                  <p className="font-handwriting text-lg">{item.name}</p>
+                  <p className="font-handwriting text-lg font-montserrat">{item.name}</p>
 
                   <div className="flex gap-4 mt-8 justify-end">
                     <button
