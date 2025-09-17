@@ -49,32 +49,32 @@ const Testimonial = () => {
 
   return (
     <div className="bg-black">
-      <div className="bg-black text-white py-16 px-6 lg:px-20 max-w-7xl mx-auto">
+      <div className="bg-black text-white py-5 lg:px-20 max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-semibold mb-2">Customer Testimonials</h2>
+          <h2 className="text-3xl font-semibold mb-2 mt-5">Customer Testimonials</h2>
           <p className="text-gray-400">Real Stories from Happy Customers</p>
         </div>
 
         <Slider {...settings} ref={sliderRef}>
           {testimonials.map((item, index) => (
             <div key={index}>
-              <div className="flex flex-col-2 lg:flex-row items-center lg:items-start gap-12">
+              <div className="flex flex-col-2 py-10 lg:flex-row items-center lg:items-center gap-12">
                 <div className="lg:justify-start">
                   <img
                     src={item.img}
                     alt="Customer"
-                    className="w-[350px] p-2 object-scale-down md:object-cover rounded-2xl"
+                    className="w-[430px] h-[430px] p-2 object-scale-down md:object-cover rounded-2xl"
                   />
                 </div>
 
-                <div className="flex-1 text-left relative">
+                <div className="flex-1 text-left relative pl-10">
                   <div className="flex items-center mb-4">
-                    <span className="text-xl">{"★".repeat(item.rating)}</span>
+                    <span className="text-2xl">{"★ ".repeat(item.rating)}</span>
                   </div>
-                  <p className="text-gray-300 mb-6 leading-relaxed">
+                  <p className="text-gray-300 mb-6 leading-relaxed font-montserrat">
                     {item.text}
                   </p>
-                  <p className="font-handwriting text-lg">{item.name}</p>
+                  <p className="font-signature text-3xl">{item.name}</p>
 
                   <div className="flex gap-4 mt-8 justify-end">
                     <button
@@ -85,7 +85,7 @@ const Testimonial = () => {
                     </button>
                     <button
                       onClick={() => sliderRef.current.slickNext()}
-                      className="w-10 h-10 cursor-pointer font-bold flex items-center justify-center rounded-full bg-[#b37b4d] text-white hover:bg-opacity-90"
+                      className="w-10 h-10 cursor-pointer font-bold flex items-center justify-center rounded-full bg-[#be9b81] text-white hover:bg-opacity-90"
                     >
                       <LiaAngleRightSolid/>
                     </button>
