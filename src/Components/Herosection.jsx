@@ -48,10 +48,10 @@ const Hero = () => {
     <section className="relative lg:py-16 px-4 sm:px-6 lg:px-12 gradient-background">
       <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6 text-left">
-          <p className="text-xs sm:text-sm uppercase tracking-wide text-black font-montserrat font-semibold">
+          <p className="text-xs sm:text-xl tracking-wide text-black font-montserrat font-medium">
             Luxurious, Confident, and Empowering
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-Mariposa font-bold text-[#6B4226] leading-tight">
+          <h1 className="2xl:text-7xl md:text-4xl  font-Mariposa font-bold text-[#BE9B81] leading-tight">
             Luxury Hair, <br /> Timeless Beauty
           </h1>
           <p className="md:text-2xl font-semibold sm:text-lg font-forum text-black max-w-md font-medium">
@@ -81,7 +81,7 @@ const Hero = () => {
           </button>
         </div>
 
-        <div className="absolute inset-y-0 md:left-22 flex items-center pr-2 sm:pr-4 z-20">
+        <div className="absolute inset-y-0 md:left-22 xs:right-0 flex items-center pr-2 sm:pr-4 z-20">
           <button
             onClick={() => sliderRef.current.slickNext()}
             className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-[var(--primary)] border-1 border-[var(--primary)]
@@ -101,7 +101,7 @@ const Hero = () => {
                   className="w-full h-24 sm:h-32 lg:h-36 object-cover rounded-xl"
                 />
                 <div className="flex items-center justify-between w-full mt-2">
-                  <p className="text-sm sm:text-base font-medium text-gray-800">
+                  <p className="text-sm sm:text-base font-medium font-montserrat text-gray-800">
                     {item.name}
                   </p>
                   <MdArrowOutward className="text-base sm:text-lg text-black" />

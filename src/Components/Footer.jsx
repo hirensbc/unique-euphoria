@@ -4,7 +4,6 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-black text-gray-400 text-sm font-sans">
-    
       <div className="w-full border-b border-gray-700 pt-10 px-6 lg:px-20"></div>
 
       <div className="py-10 px-6 lg:px-20">
@@ -19,7 +18,6 @@ export default function Footer() {
             </p>
           </div>
 
-         
           <div className="hidden lg:block border-l border-gray-700 h-16 mx-6"></div>
 
           <div className="flex-1 w-full lg:max-w-md">
@@ -44,7 +42,6 @@ export default function Footer() {
 
       <div className="py-10 px-6 lg:px-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 text-center lg:text-left">
-       
           <div>
             <h3 className="text-white font-semibold mb-4">Unique Euphoria</h3>
             <p className="mb-4 text-gray-400 text-sm leading-relaxed">
@@ -75,26 +72,30 @@ export default function Footer() {
             </div>
           </div>
 
-       
           <div>
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {["Home", "Products", "About Us", "Awards", "Video Review", "Testimonials", "Blogs"].map(
-                (item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
-                      className="hover:text-white transition-colors duration-300"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                "Home",
+                "Products",
+                "About Us",
+                "Awards",
+                "Video Review",
+                "Testimonials",
+                "Blogs",
+              ].map((item) => (
+                <li key={item}>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-        
           <div>
             <h3 className="text-white font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2">
@@ -113,7 +114,6 @@ export default function Footer() {
             </ul>
           </div>
 
-     
           <div>
             <h3 className="text-white font-semibold mb-4">Get in Touch</h3>
             <ul className="space-y-2">
@@ -130,15 +130,14 @@ export default function Footer() {
         </div>
       </div>
 
-
       <div className="w-full border-b border-gray-700"></div>
 
-
-      <div className="py-4 px-6 lg:px-20 flex flex-col lg:flex-row justify-between items-center text-gray-500 text-xs">
-        <p className="mb-2 lg:mb-0">
+      <div className="max-w-8xl py-4 mx-auto lg:px-20 xs:w-100 flex justify-end lg:flex-row text-gray-500 text-xs md:space-x-[600px]">
+        <p className="mb-2 lg:mb-0 xs:text-[10px]">
           © 2025 Unique Euphoria. All rights reserved.
         </p>
-        <div className="flex space-x-6 mt-2 lg:mt-0 justify-center lg:justify-end">
+        <div className="flex space-x-10 xs:space-x-3 lg:mt-0 lg:justify-end">
+        {/* <div className="flex space-x-6 mt-2 lg:mt-0 justify-center lg:justify-end"> */}
           <a href="#" className="hover:underline">
             Terms and Condition
           </a>

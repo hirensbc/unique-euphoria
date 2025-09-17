@@ -16,7 +16,6 @@ export default {
         mariposa: ["Mariposa Sans Std", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
-
     },
   },
 

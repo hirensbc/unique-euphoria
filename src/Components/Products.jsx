@@ -105,7 +105,7 @@ const Products = () => {
           </button>
           <button
             className="cursor-pointer border border-gray-400 px-5 py-1 rounded-full text-sm 
-                             transition duration-300 ease-in-out
+                             transition duration-300 ease-in-out font-montserrat
                              hover:bg-[#E0AC85] hover:text-white hover:border-[#E0AC85]"
           >
             See All Product
@@ -117,19 +117,19 @@ const Products = () => {
             {products.map((item) => (
               <div key={item.id} className="px-3">
                 <div className="flex flex-col items-center w-full">
-                  <div className="bg-white rounded-2xl shadow-md overflow-hidden w-full relative">
+                  <div className="bg-tranparent rounded-2xl shadow-md overflow-hidden w-full relative">
                     <img
                       src={item.img}
                       alt={item.name}
-                      className="w-full h-80 object-cover"
+                      className="w-full h-110"
                     />
 
-                    <div className="absolute inset-0 flex justify-center items-end m-4 cursor-pointer">
-                      <div className="bg-white rounded-full flex items-center shadow px-2 py-1">
-                        <span className="bg-black text-white text-xs sm:text-sm px-3 py-1 rounded-l-full">
+                    <div className="absolute inset-0 flex justify-center items-end mb-4 cursor-pointer font-montserrat w-100">
+                      <div className="bg-white rounded-full flex items-center shadow px-1 py-1 w-65">
+                        <span className="bg-black text-white text-xs sm:text-sm px-9 py-1 rounded-full">
                           100%
                         </span>
-                        <span className="text-black text-xs sm:text-sm px-3 py-1 rounded-r-full">
+                        <span className="text-black text-xs sm:text-sm pl-6 py-1 rounded-full">
                           Human Hair
                         </span>
                       </div>
@@ -140,7 +140,7 @@ const Products = () => {
                     <h3 className="text-lg font-semibold text-white">
                       {item.name}
                     </h3>
-                    <p className="text-sm text-gray-300 font-medium font-serif">
+                    <p className="text-sm text-gray-300 font-medium font-montserrat">
                       {item.subtitle}
                     </p>
                   </div>
