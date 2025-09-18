@@ -36,7 +36,7 @@ const ProductCard = ({ product }) => (
         </div>
       </div>
       <div className="p-4 bg-transparent text-center">
-        <h3 className="text-lg text-gray-800 mt-2 font-mariposa">
+        <h3 className="text-lg text-gray-800 mt-2 font-montserrat">
           {product.name}
         </h3>
       </div>
