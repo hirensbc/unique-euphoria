@@ -49,7 +49,6 @@ const Icon = () => {
 
               <p className="mt-3 text-sm font-medium text-gray-700 font-montserrat">
                 {feature.title}
-                {feature.title}
               </p>
             </div>
           ))}
