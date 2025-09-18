@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,6 +28,7 @@ const NextArrow = ({ onClick }) => (
 );
 
 const RealLife = ({ title, subtitle, testimonials }) => {
+  const [activeIndex, setActiveIndex] = useState(null);
   const dataToShow = testimonials || [];
 
   const settings = useMemo(
@@ -80,8 +81,17 @@ const RealLife = ({ title, subtitle, testimonials }) => {
                     </button>
                   </div>
                   <div className="absolute inset-0 flex justify-center items-end mb-0 lg:mt-0 xs:mt-5">
-                    <button className="bg-[#BE9B81] text-black cursor-pointer rounded-full font-montserrat shadow w-[250px] px-4 py-1 text-sm border-2 border-[#ECDED3] hover:bg-[#E0AC85] hover:border-2 hover:text-white transition">
-                      View Details
+                    <button
+                      onClick={() => setActiveIndex(index)}
+                      className={`cursor-pointer rounded-full font-montserrat shadow w-[250px] px-4 py-1 text-sm transition
+            ${
+              activeIndex === index
+                ? "bg-[#BE9B81] text-white border-[#fff]"
+                : "bg-white text-black border-[#ECDED3] hover:bg-[#E0AC85] hover:text-white"
+            }
+          `}
+                    >
+                      View Detail
                     </button>
                   </div>
                 </div>

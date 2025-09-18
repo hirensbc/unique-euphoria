@@ -219,7 +219,7 @@ const Collection = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="absolute bottom-0 mx-auto lg:translate-x-12 hidden p-4 bg-transparent text-center">
+                    <div className="absolute bottom-0 mx-auto lg:translate-x-12 xs:hidden lg:block p-4 bg-transparent text-center">
                       <button className="text-black border-4 bg-white border-[#ECDED3] font-montserrat rounded-full px-17 py-2 mt-2 font-medium cursor-pointer hover:text-white hover:bg-[var(--primary)] transition">
                         View Video
                       </button>

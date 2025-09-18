@@ -14,14 +14,13 @@ import model20 from "../assets/Images/model20.png";
 import model21 from "../assets/Images/model21.png";
 
 const Testimonials = () => {
-  const realLifeData = [
-    { img: model7 },
-    { img: model9 },
-    { img: model12 },
+  const realLifeData = [{ img: model7 }, { img: model9 }, { img: model12 },];
+  const clientStory = [
     { img: model6 },
     { img: model19 },
     { img: model20 },
     { img: model21 },
+    
   ];
 
   return (
@@ -44,7 +43,7 @@ const Testimonials = () => {
       <RealLife
         title="Client Stories"
         subtitle="How Unique Euphoria Changed Their Look"
-        testimonials={realLifeData}
+        testimonials={clientStory}
       />
       <Testimonial />
 
