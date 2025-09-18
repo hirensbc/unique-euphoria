@@ -3,22 +3,21 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-400 text-sm ">
+    <footer className="bg-black text-white text-sm font-sans">
       <div className="w-full border-b border-gray-700 pt-10 px-6 lg:px-20"></div>
 
       <div className="py-10 px-6 lg:px-20">
-        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end gap-6">
-          <div className="flex-1 text-center lg:text-left">
+        <div className="flex xs:flex-col sm:flex-col lg:flex-row justify-between items-center justify-items-center lg:items-end gap-6">
+          <div className="text-center lg:text-left">
             <h2 className="text-2xl font-semibold text-white mb-2">
               Ready To Glow?
             </h2>
-            <p className="text-gray-400 text-sm font-montserrat">
+            <p className="text-white text-sm">
               Subscribe for info on our latest products + discounts, sales and
               more!
             </p>
           </div>
-
-          <div className="hidden lg:block border-l border-gray-700 h-16 mx-6"></div>
+          <div className="hidden lg:block border-l border-gray-700 h-25"></div>
 
           <div className="flex-1 w-full lg:max-w-md">
             <div className="flex bg-white rounded-full shadow-sm overflow-hidden">
@@ -44,7 +43,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 text-center lg:text-left">
           <div>
             <h3 className="text-white font-semibold mb-4">Unique Euphoria</h3>
-            <p className="mb-4 text-gray-400 text-sm leading-relaxed font-montserrat">
+            <p className="mb-4 text-white text-sm leading-relaxed">
               At Unique Euphoria, we offer premium-quality hair extensions and
               wigs that enhance your beauty and confidence. Elevate your style
               with our luxurious, natural-looking products designed to bring out
@@ -53,19 +52,19 @@ export default function Footer() {
             <div className="flex justify-center lg:justify-start gap-4 text-lg">
               <a
                 href="#"
-                className="text-gray-400 hover:text-white border border-gray-700 p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
+                className="text-white hover:text-white border border-gray-700 p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
               >
                 <FaInstagram />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white border border-gray-700 p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
+                className="text-white hover:text-white border border-gray-700 p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
               >
                 <FaFacebookF />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white border border-gray-700 p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
+                className="text-white hover:text-white border border-gray-700 p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
               >
                 <FaTwitter />
               </a>
@@ -132,13 +131,13 @@ export default function Footer() {
 
       <div className="w-full border-b border-gray-700"></div>
 
-      <div className="max-w-8xl py-4 mx-auto lg:px-20 xs:w-100 flex justify-end lg:flex-row text-gray-500 text-xs md:space-x-[600px]">
-        <p className="mb-2 lg:mb-0 xs:text-[10px] font-montserrat">
+      <div className="max-w-8xl py-4 mx-auto lg:px-5 flex xs:justify-center xs:items-center xs:flex-col xs:flex lg:justify-end lg:flex-row text-gray-500 text-xs md:space-x-200">
+        <p className="mb-2 lg:mb-0 lg:text-base xs:text-[10px]">
           © 2025 Unique Euphoria. All rights reserved.
         </p>
-        <div className="flex space-x-10 xs:space-x-3 lg:mt-0 lg:justify-end">
-        {/* <div className="flex space-x-6 mt-2 lg:mt-0 justify-center lg:justify-end"> */}
-          <a href="#" className="hover:underline font-montserrat">
+        <div className="flex space-x-10 xs:space-x-1 sm:block lg:mt-0 lg:justify-end">
+          {/* <div className="flex space-x-6 mt-2 lg:mt-0 justify-center lg:justify-end"> */}
+          <a href="#" className="hover:underline">
             Terms and Condition
           </a>
           <a href="#" className="hover:underline font-montserrat">

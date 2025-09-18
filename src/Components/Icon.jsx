@@ -1,17 +1,24 @@
 import React from "react";
-import { FaShopify, FaUsers, FaCogs, FaGlobe, FaUndo } from "react-icons/fa";
+
+import {
+  FaThumbsUp,
+  FaUsers,
+  FaWrench,
+  FaGlobe,
+  FaBoxOpen,
+} from "react-icons/fa";
 
 const features = [
-  { id: 1, icon: <FaShopify />, title: "One-Stop Service" },
-  { id: 2, icon: <FaUsers />, title: "Trusted By 800k+ Customers" },
-  { id: 3, icon: <FaCogs />, title: "Customization Service" },
-  { id: 4, icon: <FaGlobe />, title: "Worldwide Shipping" },
-  { id: 5, icon: <FaUndo />, title: "Hassle-Free Return Policy" },
+  { title: "One-Stop Service", icon: FaThumbsUp },
+  { title: "Trusted By 800K+ Customers", icon: FaUsers },
+  { title: "Customization Service", icon: FaWrench },
+  { title: "Worldwide Shipping", icon: FaGlobe },
+  { title: "Hassle-Free Return Policy", icon: FaBoxOpen },
 ];
 
 const Icon = () => {
   return (
-    <section className="bg-white py-12 sm:py-16">
+    <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-Mariposa text-black mb-2">
           Why Unique Euphoria
@@ -20,27 +27,32 @@ const Icon = () => {
           The Unique Euphoria Difference
         </p>
 
-        <div className="relative sm:flex sm:justify-around sm:items-center">
-          <div className="absolute hidden sm:block top-1/2 left-0 right-0 h-px bg-gray-300 z-0"></div>
+     
+        <div className="relative flex justify-around items-start flex-wrap gap-y-6 sm:justify-between">
+          
+      
+          <div
+            className="absolute hidden md:block w-full h-px bg-[#11111126]"
+            style={{ top: "40px" }}
+          ></div>
 
-          <div className="flex flex-col sm:flex-row sm:justify-around sm:space-x-0 space-y-8 sm:space-y-0">
-            {features.map((feature) => (
-              <div
-                key={feature.id}
-                className="flex-shrink-0 flex flex-col items-center text-center relative z-10"
-              >
-                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md border border-gray-300">
-                  <span className="text-2xl text-[#BE9B81]">
-                    {feature.icon}
-                  </span>
+          {features.map((feature) => (
+            <div
+              key={feature.title}
+              
+              className="flex flex-col items-center text-center p-2 flex-shrink-0 w-1/2 md:w-auto md:basis-1/5"
+            >
+              <div className="relative z-10">
+                <div className="w-20 h-20 rounded-full border border-[#11111126]  flex items-center justify-center shadow-md">
+                  <feature.icon className="text-3xl text-[#BE9B81]" />
                 </div>
-
-                <p className="mt-3 text-xs sm:text-sm lg:text-base font-medium font-montserrat text-gray-800">
-                  {feature.title}
-                </p>
               </div>
-            ))}
-          </div>
+
+              <p className="mt-3 text-sm font-medium text-gray-700 font-montserrat">
+                {feature.title}d
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

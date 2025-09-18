@@ -15,7 +15,7 @@ const About = () => {
       <section className=" container flex py-16 px-4 sm:px-6 lg:px-12 gradient-background">
         <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-2 gap-12 items-start">
           <div className="text-left space-y-6">
-            <h2 className="text-4xl md:text-5xl font-Mariposa font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-mariposa font-bold text-gray-900 mb-4">
               About Unique Euphoria
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -42,7 +42,7 @@ const About = () => {
                 className="w-full rounded-xl shadow-lg object-fill lg:h-60 brightness-65"
               />
               <div className="w-full   bg-black rounded-xl shadow-lg flex flex-col justify-center items-center text-white p-6">
-                <span className="text-5xl lg:text-6xl font-Mariposa font-bold">
+                <span className="text-5xl lg:text-6xl font-mariposa font-bold">
                   15+
                 </span>
                 <p className="mt-2 text-sm lg:text-base font-normal">
@@ -87,7 +87,7 @@ const About = () => {
         </div>
         <div className="flex items-center justify-center px-8 ">
           <div className="w-1/2 pr-12">
-            <h2 className="text-3xl font-Mariposa font-bold text-gray-900 mb-4  ">
+            <h2 className="text-3xl font-mariposa font-bold text-gray-900 mb-4  ">
               Our Mission
             </h2>
             <p className="text-gray-600 mb-6">
@@ -117,7 +117,7 @@ const About = () => {
           </div>
 
           <div className="w-1/2 pl-12">
-            <h2 className="text-3xl font-Mariposa font-bold text-gray-900 mb-4 ">
+            <h2 className="text-3xl font-mariposa font-bold text-gray-900 mb-4 ">
               Our Commitment <br /> to Quality
             </h2>
             <p className="text-gray-600 mb-6 text-balance ">

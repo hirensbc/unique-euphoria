@@ -39,7 +39,7 @@ const Newsletter = () => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 font-mariposa">News & Blogs</h2>
+        <h2 className="text-3xl font-bold text-gray-900">News & Blogs</h2>
         <p className="text-gray-500 mt-2 font-montserrat">Latest Updates & Expert Insights</p>
 
         <div className="grid gap-8 md:grid-cols-3 mt-10">
@@ -54,7 +54,7 @@ const Newsletter = () => {
                 className="w-full h-52 object-cover"
               />
               <div className="p-6 text-left">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 font-mariposa ">
+                <h3 className="text-lg font-semibold font-mariposa text-gray-900 mb-2">
                   {blog.title}
                 </h3>
                 <p className="text-gray-600 text-sm font-montserrat">{blog.description}</p>
@@ -64,7 +64,7 @@ const Newsletter = () => {
         </div>
 
         <div className="mt-10">
-          <button className="flex font-montserrat items-center gap-2 bg-[#b77e5e] text-white px-6 py-3 rounded-full shadow-md hover:bg-[#9c6644] transition-all duration-300 mx-auto cursor-pointer">
+          <button className="flex items-center gap-2 bg-[#be9b81] font-montserrat text-white px-6 py-3 rounded-full shadow-md hover:bg-[#9c6644] transition-all duration-300 mx-auto cursor-pointer">
             View More <IoIosArrowForward />
           </button>
         </div>

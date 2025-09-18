@@ -63,7 +63,7 @@ const RealLife = ({ title, subtitle, testimonials }) => {
                   <img
                     src={item.img}
                     alt={`Real life showcase ${index + 1}`}
-                    className="w-full h-[500px] xs:h-[200px] object-cover rounded-[25px]"
+                    className="w-full h-[400px] xs:h-[200px] object-cover rounded-[25px]"
                   />
 
                   <div className="absolute inset-0 flex justify-center items-center">

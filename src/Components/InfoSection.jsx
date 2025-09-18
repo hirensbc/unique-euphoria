@@ -57,7 +57,7 @@ const InfoSection = () => {
             }`}
           >
             <h2
-              className="text-3xl font-bold text-gray-900 mb-4 font-Mariposa"
+              className="text-3xl font-bold text-gray-900 mb-4 font-mariposa"
               dangerouslySetInnerHTML={{ __html: sec.title }}
             />
             <p

@@ -11,10 +11,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Brittany";
+  src: url("./assets/fonts/BrittanySignature.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .font-mariposa{
   font-family: "Mariposa", serif;
 }
-
+.font-signature{
+  font-family: "Brittany";
+}
 :root {
   /* Brand palette */
   --bg: #fdf8f5;

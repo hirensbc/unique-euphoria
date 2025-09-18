@@ -51,7 +51,7 @@ const Hero = () => {
           <p className="text-xs sm:text-xl tracking-wide text-black font-montserrat font-medium">
             Luxurious, Confident, and Empowering
           </p>
-          <h1 className="2xl:text-7xl md:text-4xl  font-Mariposa font-bold text-[#BE9B81] leading-tight">
+          <h1 className="2xl:text-7xl md:text-4xl  font-mariposa font-bold text-[#BE9B81] leading-tight">
             Luxury Hair, <br /> Timeless Beauty
           </h1>
           <p className="md:text-2xl font-semibold sm:text-lg font-forum text-black max-w-md ">
