@@ -20,7 +20,7 @@ const Icon = () => {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-Mariposa text-black mb-2">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-mariposa text-black mb-2">
           Why Unique Euphoria
         </h2>
         <p className="text-gray-600 mb-10 sm:mb-12 font-montserrat">
@@ -48,6 +48,7 @@ const Icon = () => {
               </div>
 
               <p className="mt-3 text-sm font-medium text-gray-700 font-montserrat">
+                {feature.title}
                 {feature.title}
               </p>
             </div>
