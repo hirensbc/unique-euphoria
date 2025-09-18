@@ -18,7 +18,7 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-mariposa font-bold text-gray-900 mb-4">
               About Unique Euphoria
             </h2>
-            <p className="text-gray-600 leading-relaxed font-montserrat">
+            <p className="text-black leading-relaxed font-montserrat">
               At Unique Euphoria, we redefine beauty with luxury hair solutions
               designed for confidence and elegance. Our brand is built on the
               foundation of quality, innovation, and self-expression, offering
