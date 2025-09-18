@@ -19,10 +19,10 @@ const Appointment = () => {
 
       <div className="w-full md:w-1/2 bg-[#e4d2c4] flex items-center justify-center pt-8 pb-4 md:pt-10 md:pb-6 px-6">
         <div className="text-center md:text-left max-w-md z-10">
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1 font-mariposa ">
             Join the Unique 
           </h1>
-          <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">
+          <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2 font-mariposa">
             Get Free Consultation
           </h3>
           <p className="text-black mb-3 font-semibold text-sm md:text-base  font-montserrat">

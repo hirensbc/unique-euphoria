@@ -48,7 +48,7 @@ const RealLife = ({ title, subtitle, testimonials }) => {
   );
 
   return (
-    <section className="py-16 max-w-7xl mx-auto bg-gradient-to-r from-[#BE9B81] to-[#ECDED3]  ">
+    <section className="py-16 w-full  mx-auto bg-gradient-to-r from-[#BE9B81] to-[#ECDED3]  ">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl lg:text-4xl font-bold font-mariposa mb-3 text-black">
           {title}
@@ -77,7 +77,7 @@ const RealLife = ({ title, subtitle, testimonials }) => {
                     </button>
                   </div>
                   <div className="absolute inset-0 flex justify-center items-end mb-0 xs:mt-5">
-                    <button className="bg-[#BE9B81] text-black cursor-pointer rounded-full font-montserrat shadow w-[250px] px-4 py-1 text-sm border-2 border-[#ECDED3] hover:bg-[#E0AC85] hover:border-2 border-[#ECDED3] hover:text-white transition">
+                    <button className="bg-[#BE9B81] text-black cursor-pointer rounded-full font-montserrat shadow w-[250px] px-4 py-1 text-sm border-2 border-[#ECDED3] hover:bg-[#E0AC85] hover:border-2  hover:text-white transition">
                       View Details
                     </button>
                   </div>

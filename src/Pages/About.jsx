@@ -12,13 +12,13 @@ const About = () => {
   return (
     <>
       <NavBar textColor="text-black" />
-      <section className=" container flex py-16 px-4 sm:px-6 lg:px-12 gradient-background">
+      <section className=" container flex py-16 px-4 sm:px-6 lg:px-12 gradient-background ">
         <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-2 gap-12 items-start">
           <div className="text-left space-y-6">
             <h2 className="text-4xl md:text-5xl font-mariposa font-bold text-gray-900 mb-4">
               About Unique Euphoria
             </h2>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed font-montserrat">
               At Unique Euphoria, we redefine beauty with luxury hair solutions
               designed for confidence and elegance. Our brand is built on the
               foundation of quality, innovation, and self-expression, offering
@@ -36,12 +36,15 @@ const About = () => {
 
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col gap-4">
+            
+                <div className="w-full h-full">
               <img
                 src={model14}
-                alt="Model with hair"
-                className="w-full rounded-xl shadow-lg object-fill lg:h-60 brightness-65"
+                alt="Another model"
+                className="w-full h-full rounded-xl shadow-lg object-cover"
               />
-              <div className="w-full   bg-black rounded-xl shadow-lg flex flex-col justify-center items-center text-white p-6">
+            </div>
+              <div className="w-full   bg-black rounded-xl  flex flex-col justify-center items-center text-white p-6">
                 <span className="text-5xl lg:text-6xl font-mariposa font-bold">
                   15+
                 </span>
@@ -72,10 +75,10 @@ const About = () => {
           </div>
 
           <div className="w-1/2 pl-12">
-            <h2 className="text-3xl  text-gray-900 mb-4  ">
+            <h2 className="text-3xl  text-gray-900 mb-4  font-mariposa  ">
               Our Story
             </h2>
-            <p className="text-gray-600 mb-6 text-justify text-wrap">
+            <p className="text-gray-600 mb-6 text-justify text-wrap font-montserrat">
               At Unique Euphoria, we believe that beauty is an expression of
               confidence and individuality. Our journey began with a simple
               mission: to provide luxurious, high-quality hair solutions that
@@ -90,7 +93,7 @@ const About = () => {
             <h2 className="text-3xl font-mariposa font-bold text-gray-900 mb-4  ">
               Our Mission
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-6 font-montserrat">
               Our mission is to redefine luxury hair care by offering premium,
               ethically sourced products that enhance natural beauty and boost
               self-confidence. We are dedicated to providing every customer with
@@ -117,10 +120,10 @@ const About = () => {
           </div>
 
           <div className="w-1/2 pl-12">
-            <h2 className="text-3xl font-mariposa font-bold text-gray-900 mb-4 ">
+            <h2 className="text-3xl font-mariposa font-bold text-gray-900 mb-4  ">
               Our Commitment <br /> to Quality
             </h2>
-            <p className="text-gray-600 mb-6 text-balance ">
+            <p className="text-gray-600 mb-6 text-balance font-montserrat ">
               Every strand of hair we offer is carefully selected and ethically
               sourced to ensure unmatched quality and durability. From natural
               textures to stunning styles, our products are crafted to enhance
