@@ -71,7 +71,7 @@ const ProductSlider = ({title, bgWhite}) => {
 
     
         <div className="mt-8 flex justify-center space-x-4">
-          {[ "Straight", "Wavy", "Curly"].map((cat) => (
+          {[ "All","Straight", "Wavy", "Curly"].map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}

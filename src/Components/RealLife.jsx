@@ -59,7 +59,10 @@ const RealLife = ({ title, subtitle, testimonials }) => {
           <Slider {...settings}>
             {dataToShow.map((item, index) => (
               <>
-                <div key={index} className="relative px-3 lg:h-[515px] xs:h-[215px] group">
+                <div
+                  key={index}
+                  className="relative px-3 lg:h-[515px] xs:h-[215px] group"
+                >
                   <img
                     src={item.img}
                     alt={`Real life showcase ${index + 1}`}
@@ -77,7 +80,7 @@ const RealLife = ({ title, subtitle, testimonials }) => {
                     </button>
                   </div>
                   <div className="absolute inset-0 flex justify-center items-end mb-0 lg:mt-0 xs:mt-5">
-                    <button className="bg-[#BE9B81] text-black cursor-pointer rounded-full font-montserrat shadow w-[250px] px-4 py-1 text-sm border-2 border-[#ECDED3] hover:bg-[#E0AC85] hover:border-2 border-[#ECDED3] hover:text-white transition">
+                    <button className="bg-[#BE9B81] text-black cursor-pointer rounded-full font-montserrat shadow w-[250px] px-4 py-1 text-sm border-2 border-[#ECDED3] hover:bg-[#E0AC85] hover:border-2 hover:text-white transition">
                       View Details
                     </button>
                   </div>
