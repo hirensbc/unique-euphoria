@@ -100,10 +100,10 @@ const Collection = () => {
 
         <div className="min-h-screen bg-gradient-to-r from-[#BE9B81] to-[#ECDED3] w-full text-black p-8 flex flex-col items-center justify-center font-inter">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#333]">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#333] font-mariposa">
               Professionals
             </h2>
-            <p className="text-lg md:text-xl font-inter text-gray-600 mt-2">
+            <p className="text-lg md:text-xl font-inter text-gray-600 mt-2 font-montserrat">
               Video Tutorial By Our Professional Team
             </p>
           </div>
