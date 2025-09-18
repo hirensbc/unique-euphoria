@@ -40,7 +40,7 @@ const Newsletter = () => {
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
         <h2 className="text-3xl font-bold text-gray-900 font-mariposa">News & Blogs</h2>
-        <p className="text-gray-500 mt-2 font-montserrat">Latest Updates & Expert Insights</p>
+        <p className="text-black mt-2 font-montserrat">Latest Updates & Expert Insights</p>
 
         <div className="grid gap-8 md:grid-cols-3 mt-10">
           {blogs.map((blog) => (

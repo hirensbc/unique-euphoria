@@ -71,7 +71,7 @@ const Testimonial = () => {
                   <div className="flex items-center mb-4">
                     <span className="text-2xl">{"★ ".repeat(item.rating)}</span>
                   </div>
-                  <p className="text-gray-300 mb-6 leading-relaxed font-montserrat">
+                  <p className="text-white mb-6 leading-relaxed font-montserrat">
                     {item.text}
                   </p>
                   <p className="font-signature text-3xl">{item.name}</p>

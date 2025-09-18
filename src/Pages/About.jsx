@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       <NavBar textColor="text-black" />
-      <section className=" container flex py-16 px-4 sm:px-6 lg:px-12 gradient-background ">
+      <section className="flex py-16 px-4 sm:px-6 lg:px-12 gradient-background w-full mx-auto">
         <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-2 gap-12 items-start">
           <div className="text-left space-y-6">
             <h2 className="text-4xl md:text-5xl font-mariposa font-bold text-gray-900 mb-4">
@@ -36,14 +36,13 @@ const About = () => {
 
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col gap-4">
-            
-                <div className="w-full h-full">
-              <img
-                src={model14}
-                alt="Another model"
-                className="w-full h-full rounded-xl shadow-lg object-cover"
-              />
-            </div>
+              <div className="w-full h-full">
+                <img
+                  src={model14}
+                  alt="Another model"
+                  className="w-full h-full rounded-xl shadow-lg object-cover"
+                />
+              </div>
               <div className="w-full   bg-black rounded-xl  flex flex-col justify-center items-center text-white p-6">
                 <span className="text-5xl lg:text-6xl font-mariposa font-bold">
                   15+
@@ -63,81 +62,85 @@ const About = () => {
           </div>
         </div>
       </section>
+      <section className="w-full flex flex-col justify-center items-center bg-white">
+        <div className=" grid grid-row items-start justify-center px-6 md:px-12  bg-white">
+          <div className="flex items-center justify-center px-8  ">
+            <div className="w-1/2 flex justify-center items-start pt-0">
+              <img
+                src="../../src/assets/Images/Hair4.jpg"
+                alt="Hair Collection"
+                className=" w-full h-[500px]  object-cover  shadow-md"
+              />
+            </div>
 
-      <div className=" grid grid-row items-start justify-center px-6 md:px-12  bg-white">
-        <div className="flex items-center justify-center px-8  ">
-          <div className="w-1/2 flex justify-center items-start pt-0">
-            <img
-              src="../../src/assets/Images/Hair4.jpg"
-              alt="Hair Collection"
-              className=" w-full h-[500px]  object-cover  shadow-md"
-            />
+            <div className="w-1/2 pl-12">
+              <h2 className="text-3xl  text-gray-900 mb-4  font-mariposa  ">
+                Our Story
+              </h2>
+              <p className="text-gray-600 mb-6 text-justify text-wrap font-montserrat">
+                At Unique Euphoria, we believe that beauty is an expression of
+                confidence and individuality. Our journey began with a simple
+                mission: to provide luxurious, high-quality hair solutions that
+                empower individuals to feel their best. With a passion for
+                elegance and excellence, we curate hair products that blend
+                beauty with timeless sophistication.
+              </p>
+            </div>
           </div>
+          <div className="flex items-center justify-center px-8 ">
+            <div className="w-1/2 pr-12">
+              <h2 className="text-3xl font-mariposa font-bold text-gray-900 mb-4  ">
+                Our Mission
+              </h2>
+              <p className="text-gray-600 mb-6 font-montserrat">
+                Our mission is to redefine luxury hair care by offering premium,
+                ethically sourced products that enhance natural beauty and boost
+                self-confidence. We are dedicated to providing every customer
+                with an exceptional experience, ensuring they feel empowered,
+                radiant, and uniquely themselves.
+              </p>
+            </div>
 
-          <div className="w-1/2 pl-12">
-            <h2 className="text-3xl  text-gray-900 mb-4  font-mariposa  ">
-              Our Story
-            </h2>
-            <p className="text-gray-600 mb-6 text-justify text-wrap font-montserrat">
-              At Unique Euphoria, we believe that beauty is an expression of
-              confidence and individuality. Our journey began with a simple
-              mission: to provide luxurious, high-quality hair solutions that
-              empower individuals to feel their best. With a passion for
-              elegance and excellence, we curate hair products that blend beauty
-              with timeless sophistication.
-            </p>
+            <div className="w-1/2 flex justify-center">
+              <img
+                src="../../src/assets/Images/hair5.jpg"
+                alt="Hair Collection"
+                className=" w-full h-[500px] object-cover  shadow-md"
+              />
+            </div>
+          </div>
+          <div className="flex items-center justify-center px-8 ">
+            <div className="w-1/2 flex justify-center">
+              <img
+                src="../../src/assets/Images/Hair2.jpg"
+                alt="Hair Collection"
+                className=" w-full h-[500px]  object-cover shadow-md"
+              />
+            </div>
+
+            <div className="w-1/2 pl-12">
+              <h2 className="text-3xl font-mariposa font-bold text-gray-900 mb-4  ">
+                Our Commitment <br /> to Quality
+              </h2>
+              <p className="text-gray-600 mb-6 text-balance font-montserrat ">
+                Every strand of hair we offer is carefully selected and
+                ethically sourced to ensure unmatched quality and durability.
+                From natural textures to stunning styles, our products are
+                crafted to enhance your beauty effortlessly. Whether you seek
+                volume, length, or a fresh new look, Unique Euphoria is
+                dedicated to delivering hair that feels as incredible as it
+                looks.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="flex items-center justify-center px-8 ">
-          <div className="w-1/2 pr-12">
-            <h2 className="text-3xl font-mariposa font-bold text-gray-900 mb-4  ">
-              Our Mission
-            </h2>
-            <p className="text-gray-600 mb-6 font-montserrat">
-              Our mission is to redefine luxury hair care by offering premium,
-              ethically sourced products that enhance natural beauty and boost
-              self-confidence. We are dedicated to providing every customer with
-              an exceptional experience, ensuring they feel empowered, radiant,
-              and uniquely themselves.
-            </p>
-          </div>
 
-          <div className="w-1/2 flex justify-center">
-            <img
-              src="../../src/assets/Images/hair5.jpg"
-              alt="Hair Collection"
-              className=" w-full h-[500px] object-cover  shadow-md"
-            />
-          </div>
+        <Icon />
+        <div className="mx-auto bg-black w-full">
+          <Testimonial />
         </div>
-        <div className="flex items-center justify-center px-8 ">
-          <div className="w-1/2 flex justify-center">
-            <img
-              src="../../src/assets/Images/Hair2.jpg"
-              alt="Hair Collection"
-              className=" w-full h-[500px]  object-cover shadow-md"
-            />
-          </div>
-
-          <div className="w-1/2 pl-12">
-            <h2 className="text-3xl font-mariposa font-bold text-gray-900 mb-4  ">
-              Our Commitment <br /> to Quality
-            </h2>
-            <p className="text-gray-600 mb-6 text-balance font-montserrat ">
-              Every strand of hair we offer is carefully selected and ethically
-              sourced to ensure unmatched quality and durability. From natural
-              textures to stunning styles, our products are crafted to enhance
-              your beauty effortlessly. Whether you seek volume, length, or a
-              fresh new look, Unique Euphoria is dedicated to delivering hair
-              that feels as incredible as it looks.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <Icon />
-      <Testimonial />
-      <Appointment />
+        <Appointment />
+      </section>
     </>
   );
 };
