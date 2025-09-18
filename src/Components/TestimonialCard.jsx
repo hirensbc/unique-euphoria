@@ -46,7 +46,7 @@ const TestimonialCard = () => {
             </p>
             <div className="flex justify-center md:justify-start">
               <button className="px-6 py-2 bg-[var(--primary)] text-white rounded-full cursor-pointer hover:bg-[#E0AC85] hover:scale-105 transition-all duration-300 font-montserrat">
-                View Collection
+                Explore Styles
               </button>
             </div>
           </div>
