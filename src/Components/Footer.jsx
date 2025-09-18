@@ -45,7 +45,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4 font-mariposa">
               Unique Euphoria
             </h3>
-            <p className="mb-4 text-white text-sm leading-relaxed font-montserrat">
+            <p className="mb-4 text-white text-sm leading-relaxed font-montserrat ">
               At Unique Euphoria, we offer premium-quality hair extensions and
               wigs that enhance your beauty and confidence. Elevate your style
               with our luxurious, natural-looking products designed to bring out

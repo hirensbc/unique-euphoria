@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import NavBar from "../Components/NavBar";
 import Items from "../Components/Slider";
 import CollectionImg from "../assets/Images/Collections.png";
@@ -39,6 +39,7 @@ const PrevArrow = ({ onClick }) => (
 );
 
 const Collection = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
   const videos = useMemo(
     () => [
       { image: model15, title: "Video Tutorial By Our Professional Team" },
@@ -111,22 +112,39 @@ const Collection = () => {
           <div className="relative w-full max-w-6xl">
             <Slider {...settings}>
               {videos.map((video, index) => (
-                <div key={index} className="px-3">
-                  <div className="w-full bg-white rounded-3xl overflow-hidden">
-                    <div className="relative">
-                      <img
-                        src={video.image}
-                        alt={video.title}
-                        className="w-full h-auto object-cover rounded-3xl"
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="bg-opacity-50 rounded-full p-4 cursor-pointer hover:bg-opacity-70 transition">
-                          <FaPlay className="h-10 w-10 text-white" />
-                        </div>
-                      </div>
+                <div
+                  key={index}
+                  className="relative px-3 lg:h-[515px] sm:h-[215px] group py-4"
+                >
+                  <div className="relative">
+                    <img
+                      src={video.image}
+                      alt={video.title}
+                      className="w-full lg:h-[500px] sm:h-[200px] object-cover rounded-[25px]"
+                    />
+
+                    <div className="absolute inset-0 flex justify-center items-center">
+                      <button
+                        aria-label="Play video"
+                        className="w-12 h-12 flex items-center justify-center bg-white/80 
+                     rounded-full shadow-lg cursor-pointer hover:bg-[#E0AC85] 
+                     hover:text-white transition"
+                      >
+                        <FaPlay className="text-black group-hover:text-white" />
+                      </button>
                     </div>
-                    <div className="p-4 bg-transparent text-center">
-                      <button className="text-gray-800 border border-gray-400 rounded-full px-6 py-2 mt-2 font-medium cursor-pointer hover:text-white hover:bg-[var(--primary)] transition">
+
+                    <div className="absolute inset-0 flex justify-center items-end mb-4">
+                      <button
+                        onClick={() => setActiveIndex(index)}
+                        className={`cursor-pointer rounded-full font-montserrat shadow w-[250px] px-4 py-1 text-sm border-2 transition
+            ${
+              activeIndex === index
+                ? "bg-[#BE9B81] text-white border-[#BE9B81]"
+                : "bg-white text-black border-[#ECDED3] hover:bg-[#E0AC85] hover:text-white"
+            }
+          `}
+                      >
                         View Video
                       </button>
                     </div>
