@@ -48,7 +48,7 @@ const RealLife = ({ title, subtitle, testimonials }) => {
   );
 
   return (
-    <section className="py-16 w-full  mx-auto bg-gradient-to-r from-[#BE9B81] to-[#ECDED3]  ">
+    <section className="py-16 w-full mx-auto bg-gradient-to-r from-[#BE9B81] to-[#ECDED3]  ">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl lg:text-4xl font-bold font-mariposa mb-3 text-black">
           {title}
@@ -59,11 +59,11 @@ const RealLife = ({ title, subtitle, testimonials }) => {
           <Slider {...settings}>
             {dataToShow.map((item, index) => (
               <>
-                <div key={index} className="relative px-3 h-[200px] group">
+                <div key={index} className="relative px-3 lg:h-[515px] xs:h-[215px] group">
                   <img
                     src={item.img}
                     alt={`Real life showcase ${index + 1}`}
-                    className="w-full h-[400px] xs:h-[200px] object-cover rounded-[25px]"
+                    className="w-full lg:h-[500px] xs:h-[200px] object-cover rounded-[25px]"
                   />
 
                   <div className="absolute inset-0 flex justify-center items-center">
@@ -76,8 +76,8 @@ const RealLife = ({ title, subtitle, testimonials }) => {
                       <FaPlay className="text-black group-hover:text-white" />
                     </button>
                   </div>
-                  <div className="absolute inset-0 flex justify-center items-end mb-0 xs:mt-5">
-                    <button className="bg-[#BE9B81] text-black cursor-pointer rounded-full font-montserrat shadow w-[250px] px-4 py-1 text-sm border-2 border-[#ECDED3] hover:bg-[#E0AC85] hover:border-2  hover:text-white transition">
+                  <div className="absolute inset-0 flex justify-center items-end mb-0 lg:mt-0 xs:mt-5">
+                    <button className="bg-[#BE9B81] text-black cursor-pointer rounded-full font-montserrat shadow w-[250px] px-4 py-1 text-sm border-2 border-[#ECDED3] hover:bg-[#E0AC85] hover:border-2 border-[#ECDED3] hover:text-white transition">
                       View Details
                     </button>
                   </div>

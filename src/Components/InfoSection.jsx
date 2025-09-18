@@ -9,21 +9,21 @@ const sections = [
     title: "Choose Your <br /> Perfect Hair",
     desc: "Find the perfect match from our premium collection of 100% Raw hair.  Whether you're looking for volume, length, or a complete transformation, we have it all.",
     reverse: false,
-    button: "View Collection" 
+    button: "View Collection",
   },
   {
     img: Hair5,
     title: "Easily place <br /> your order",
     desc: "Enjoy a seamless shopping experience with our secure checkout and fast shipping.  Choose your preferred length, texture, and style with just a few clicks.",
     reverse: true,
-    button: "Order Now"
+    button: "Order Now",
   },
   {
     img: Hair2,
     title: "Style With <br /> Confidence",
     desc: "Unleash your beauty with premium quality hair that speaks volumes!Whether you love sleek and straight, bold and curly, or luxurious waves,<br/>Unique Euphoria has the perfect bundles to match your vibe.",
     reverse: false,
-    button: "Explore Styling Tips"
+    button: "Explore Styling Tips",
   },
 ];
 
@@ -52,16 +52,16 @@ const InfoSection = () => {
 
           {/* TEXT */}
           <div
-            className={`w-full md:w-1/2 text-center md:text-left ${
+            className={`w-full md:w-1/2 sm:w-100 lg:mx-auto text-center md:text-left ${
               sec.reverse ? "md:order-1 md:pr-12" : "md:order-2 md:pl-12"
             }`}
           >
             <h2
-              className="text-3xl font-bold text-gray-900 mb-4 font-mariposa"
+              className="text-3xl font-bold text-black mb-4 mx-auto font-mariposa"
               dangerouslySetInnerHTML={{ __html: sec.title }}
             />
             <p
-              className="text-gray-600 mb-6 text-justify w-100 font-montserrat"
+              className="text-black mb-6 xs:mx-auto lg:mx-0 text-justify lg:text-left md:text-left xs:text-sm xs:w-80 xs:text-center sm:text-center sm:text-justify w-full font-montserrat"
               dangerouslySetInnerHTML={{ __html: sec.desc }}
             >
               {/* {sec.desc} */}
