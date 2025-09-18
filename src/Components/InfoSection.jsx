@@ -3,34 +3,10 @@ import Hair4 from "../../src/assets/Images/Hair4.jpg";
 import Hair5 from "../../src/assets/Images/hair5.jpg";
 import Hair2 from "../../src/assets/Images/Hair2.jpg";
 
-const sections = [
-  {
-    img: Hair4,
-    title: "Choose Your <br /> Perfect Hair",
-    desc: "Find the perfect match from our premium collection of 100% Raw hair.  Whether you're looking for volume, length, or a complete transformation, we have it all.",
-    reverse: false,
-    button: "View Collection",
-  },
-  {
-    img: Hair5,
-    title: "Easily place <br /> your order",
-    desc: "Enjoy a seamless shopping experience with our secure checkout and fast shipping.  Choose your preferred length, texture, and style with just a few clicks.",
-    reverse: true,
-    button: "Order Now",
-  },
-  {
-    img: Hair2,
-    title: "Style With <br /> Confidence",
-    desc: "Unleash your beauty with premium quality hair that speaks volumes!Whether you love sleek and straight, bold and curly, or luxurious waves,<br/>Unique Euphoria has the perfect bundles to match your vibe.",
-    reverse: false,
-    button: "Explore Styling Tips",
-  },
-];
-
-const InfoSection = () => {
+const InfoSection = ({ info }) => {
   return (
     <div className="flex flex-col items-center justify-center px-0 md:px-0 bg-white no-space">
-      {sections.map((sec, idx) => (
+      {info.map((sec, idx) => (
         <div
           key={idx}
           className={`flex flex-col md:flex-row items-center justify-center px-0 ${
@@ -46,7 +22,7 @@ const InfoSection = () => {
             <img
               src={sec.img}
               alt="Hair Collection"
-              className="w-[830px] h-[500px] object-cover shadow-md"
+              className="lg:w-[830px] lg:h-[500px] xs:h-[200px] xs:w-full xs:rounded-lg object-cover shadow-md"
             />
           </div>
 
@@ -61,14 +37,16 @@ const InfoSection = () => {
               dangerouslySetInnerHTML={{ __html: sec.title }}
             />
             <p
-              className="text-black mb-6 xs:mx-auto lg:mx-0 text-justify lg:text-left md:text-left xs:text-sm xs:w-80 xs:text-center sm:text-center sm:text-justify w-full font-montserrat"
+              className="text-black mb-6 xs:mx-auto lg:mx-0 text-justify lg:text-left md:text-left xs:text-sm xs:w-80 xs:text-justify sm:text-center sm:text-justify w-full font-montserrat"
               dangerouslySetInnerHTML={{ __html: sec.desc }}
             >
               {/* {sec.desc} */}
             </p>
-            <button className="font-montserrat px-6 py-2 bg-[var(--primary)] text-white rounded-full cursor-pointer hover:bg-[#E0AC85] hover:text-white hover:scale-105 transition-all duration-300">
-              {sec.button}
-            </button>
+            {sec.button ? (
+              <button className="font-montserrat px-6 py-2 bg-[var(--primary)] text-white rounded-full cursor-pointer hover:bg-[#E0AC85] hover:text-white hover:scale-105 transition-all duration-300">
+                {sec.button}
+              </button>
+            ) : null}
           </div>
         </div>
       ))}

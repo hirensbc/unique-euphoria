@@ -63,7 +63,7 @@ const Navbar = ({ textColor = "text-black" }) => {
         </NavLink>
 
         <button
-          className="md:hidden p-2 rounded-md border border-[#E0AC85] text-gray-800"
+          className="md:hidden p-2 rounded-md border border-[#E0AC85] text-[#b48059]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -75,7 +75,7 @@ const Navbar = ({ textColor = "text-black" }) => {
       </div>
 
       <div className={`md:hidden w-full ${isOpen ? "block" : "hidden"} mt-4`}>
-        <nav className="w-full bg-[#f5e2d2] shadow-md rounded-xl animate-slideDown border border-[#E0AC85]/40">
+        <nav className="w-full bg-[#f5e2d2aa] rounded-xl animate-slideDown border border-[#E0AC85]/40">
           <div className="flex flex-col items-center gap-4 py-4 text-base font-montserrat">
             <NavLink
               to="/"
@@ -92,6 +92,13 @@ const Navbar = ({ textColor = "text-black" }) => {
               About
             </NavLink>
             <NavLink
+              to="#"
+              className="hover:text-[#E0AC85]"
+              onClick={() => setIsOpen(false)}
+            >
+              Award
+            </NavLink>
+            <NavLink
               to="/testimonials"
               className="hover:text-[#E0AC85]"
               onClick={() => setIsOpen(false)}
@@ -100,14 +107,10 @@ const Navbar = ({ textColor = "text-black" }) => {
             </NavLink>
             <NavLink
               to="/collection"
-              className="hover:text-[#E0AC85]"
-              onClick={() => setIsOpen(false)}
+              className="px-5 py-2 rounded-full text-gray-800 bg-white border border-[#E0AC85] font-medium hover:text-white hover:bg-[var(--primary)] transition duration-300 ease-in-out"
             >
-              Collection
-            </NavLink>
-            <button className="px-5 py-2 rounded-full text-gray-800 bg-white border border-[#E0AC85] font-medium hover:text-white hover:bg-[var(--primary)] transition duration-300 ease-in-out">
               Explore Collection
-            </button>
+            </NavLink>
           </div>
         </nav>
       </div>

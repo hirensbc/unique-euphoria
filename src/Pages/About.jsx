@@ -7,13 +7,38 @@ import Appointment from "../Components/Appointment";
 
 import model13 from "../assets/Images/model13.png";
 import model14 from "../assets/Images/model14.png";
+import logo from "../assets/Images/logoBlack.png";
+import hair2 from "../assets/Images/Hair2.jpg";
+import hair5 from "../assets/Images/Hair5.jpg";
+import InfoSection from "../Components/InfoSection";
+
+const info = [
+  {
+    img: logo,
+    title: "Our Story",
+    desc: "At Unique Euphoria, we believe that beauty is an expression of confidence and individuality. Our journey began with a simple mission: to provide luxurious, high-quality hair solutions that empower individuals to feel their best. With a passion for elegance and excellence, we curate hair products that blend beauty with timeless sophistication.",
+    reverse: false,
+  },
+  {
+    img: hair2,
+    title: "Our Mission",
+    desc: "Our mission is to redefine luxury hair care by offering premium, ethically sourced products that enhance natural beauty and boost self-confidence. We are dedicated to providing every customer with an exceptional experience, ensuring they feel empowered, radiant, and uniquely themselves.",
+    reverse: true,
+  },
+  {
+    img: hair5,
+    title: "Our Commitment <br /> to Quality",
+    desc: "Every strand of hair we offer is carefully selected and ethically sourced to ensure unmatched quality and durability. From natural textures to stunning styles, our products are crafted to enhance your beauty effortlessly. Whether you seek volume, length, or a fresh new look, Unique Euphoria is dedicated to delivering hair that feels as incredible as it looks.",
+    reverse: false,
+  },
+];
 
 const About = () => {
   return (
     <>
       <NavBar textColor="text-black" />
       <section className="flex py-16 px-4 sm:px-6 lg:px-12 gradient-background w-full mx-auto">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-2 gap-12 items-start">
+        <div className="max-w-7xl mx-auto lg:grid grid-cols-2 lg:grid-cols-2 gap-12 items-start xs:flex xs:flex-col xs:flex-col-reverse">
           <div className="text-left space-y-6">
             <h2 className="text-4xl md:text-5xl font-mariposa font-bold text-gray-900 mb-4">
               About Unique Euphoria
@@ -63,7 +88,7 @@ const About = () => {
         </div>
       </section>
       <section className="w-full flex flex-col justify-center items-center bg-white">
-        <div className=" grid grid-row items-start justify-center px-6 md:px-12  bg-white">
+        {/* <div className=" grid grid-row items-start justify-center px-6 md:px-12  bg-white">
           <div className="flex items-center justify-center px-8  ">
             <div className="w-1/2 flex justify-center items-start pt-0">
               <img
@@ -133,7 +158,8 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
+        <InfoSection info={info} />
 
         <Icon />
         <div className="mx-auto bg-black w-full">

@@ -2,6 +2,7 @@ import { Suspense, lazy } from "react";
 import { useRoutes } from "react-router-dom";
 
 import Footer from "../Components/Footer";
+import Navbar from "../Components/NavBar";
 
 const Home = lazy(() => import("../Pages/Home"));
 const About = lazy(() => import("../Pages/About"));
@@ -20,7 +21,7 @@ const AppRoutes = () => {
     // <Suspense fallback={<div>Loading...</div>}>
     <Suspense
       fallback={
-        <div role="status" className="ml-[50vw] mt-[50vh] xs:mx-auto xs:my-auto">
+        <div role="status" className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
           <svg
             aria-hidden="true"
             class="inline w-10 h-10 text-white animate-spin dark:text-gray-600 fill-[#e7d5c5]"

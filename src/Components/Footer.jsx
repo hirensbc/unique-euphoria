@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import logo from "../assets/Images/logo1.png"
 
 export default function Footer() {
   return (
@@ -43,7 +44,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 text-center lg:text-left">
           <div>
             <h3 className="text-white font-semibold mb-4 font-mariposa">
-              Unique Euphoria
+              {/* Unique Euphoria */}
+              <img src={logo} alt="" srcset="" />
             </h3>
             <p className="mb-4 text-white text-sm leading-relaxed font-montserrat">
               At Unique Euphoria, we offer premium-quality hair extensions and

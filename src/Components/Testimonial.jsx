@@ -58,12 +58,12 @@ const Testimonial = () => {
         <Slider {...settings} ref={sliderRef}>
           {testimonials.map((item, index) => (
             <div key={index}>
-              <div className="flex flex-col-2 py-10 lg:flex-row items-center lg:items-center gap-12">
+              <div key={index} className="flex flex-col-2 py-10 lg:flex-row xs:flex-col items-center lg:items-center gap-12">
                 <div className="lg:justify-start">
                   <img
                     src={item.img}
                     alt="Customer"
-                    className="w-[430px] h-[430px] p-2 object-scale-down md:object-cover rounded-2xl"
+                    className="lg:w-[430px] lg:h-[430px] xs:w-[250px] xs:h-[400px] p-2 object-scale-down md:object-cover rounded-2xl"
                   />
                 </div>
 
@@ -76,7 +76,7 @@ const Testimonial = () => {
                   </p>
                   <p className="font-signature text-3xl">{item.name}</p>
 
-                  <div className="flex gap-4 mt-8 justify-end">
+                  <div className="flex gap-4 mt-8 justify-end lg:fixed">
                     <button
                       onClick={() => sliderRef.current.slickPrev()}
                       className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-full bg-white text-black hover:bg-gray-200"
