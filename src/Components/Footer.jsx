@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import logo from "../assets/Images/logo1.png";
 
 export default function Footer() {
   return (
@@ -40,12 +41,10 @@ export default function Footer() {
       <div className="w-full border-b border-gray-700 py-4 px-6 lg:px-20"></div>
 
       <div className="py-10 px-6 lg:px-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 text-center lg:text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 text-center lg:text-left ">
           <div>
-            <h3 className="text-white font-semibold mb-4 font-mariposa">
-              Unique Euphoria
-            </h3>
-            <p className="mb-4 text-white text-sm leading-relaxed font-montserrat ">
+            <img alt="Unique Euphoria" className="h-10 mb-8" src={logo} />
+            <p className="mb-4 text-white text-sm leading-relaxed font-montserrat  ">
               At Unique Euphoria, we offer premium-quality hair extensions and
               wigs that enhance your beauty and confidence. Elevate your style
               with our luxurious, natural-looking products designed to bring out
@@ -54,30 +53,30 @@ export default function Footer() {
             <div className="flex justify-center lg:justify-start gap-4 text-lg">
               <a
                 href="#"
-                className="text-white hover:text-white border border-gray-700 p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
+                className="text-[#BE9B81] hover:text-white border border-[#FFFFFF3D] p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
               >
                 <FaInstagram />
               </a>
               <a
                 href="#"
-                className="text-white hover:text-white border border-gray-700 p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
+                className="text-[#BE9B81] hover:text-white border border-[#FFFFFF3D] p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
               >
                 <FaFacebookF />
               </a>
               <a
                 href="#"
-                className="text-white hover:text-white border border-gray-700 p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
+                className="text-[#BE9B81] hover:text-white border border-[#FFFFFF3D] p-2 rounded-full hover:bg-[#E0AC85] transition-colors duration-300"
               >
                 <FaTwitter />
               </a>
             </div>
           </div>
 
-          <div>
-            <h3 className="text-white font-semibold  mb-4 font-mariposa ">
+          <div >
+            <h3 className="text-white font-semibold  mb-4 font-mariposa">
               Quick Links
             </h3>
-            <ul className="space-y-2 font-montserrat">
+            <ul className="space-y-2 font-montserrat ">
               {[
                 "Home",
                 "Products",
@@ -140,7 +139,7 @@ export default function Footer() {
       <div className="w-full border-b border-gray-700"></div>
 
       <div className="max-w-8xl py-4 text-white lg:px-5 flex xs:justify-center xs:items-center xs:flex-col xs:flex lg:justify-end lg:flex-row text-xs md:space-x-200">
-        <p className="mb-2 lg:mb-0 lg:text-base xs:text-[10px]">
+        <p className="mb-2 lg:mb-0  lg:text-base xs:text-[10px]">
           © 2025 Unique Euphoria. All rights reserved.
         </p>
         <div className="flex space-x-10 xs:space-x-1 sm:block lg:mt-0 lg:justify-end ">
