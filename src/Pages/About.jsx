@@ -4,13 +4,14 @@ import Icon from "../Components/Icon";
 import NavBar from "../Components/NavBar";
 import Testimonial from "../Components/Testimonial";
 import Appointment from "../Components/Appointment";
+import InfoSection from "../Components/InfoSection";
 
 import model13 from "../assets/Images/model13.png";
 import model14 from "../assets/Images/model14.png";
 import logo from "../assets/Images/logoBlack.png";
 import hair2 from "../assets/Images/Hair2.jpg";
 import hair5 from "../assets/Images/Hair5.jpg";
-import InfoSection from "../Components/InfoSection";
+import lady1 from "../assets/Images/lady1.png"
 
 const info = [
   {
@@ -94,7 +95,7 @@ const About = () => {
         <div className="mx-auto bg-black w-full">
           <Testimonial />
         </div>
-        <Appointment />
+        <Appointment appImg={lady1} objectPosition={"object-[0%_25%]"}/>
       </section>
     </>
   );

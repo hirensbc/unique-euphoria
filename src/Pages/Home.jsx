@@ -12,6 +12,7 @@ import NavBar from '../Components/NavBar'
 import Hair4 from "../../src/assets/Images/Hair4.jpg";
 import Hair5 from "../../src/assets/Images/hair5.jpg";
 import Hair2 from "../../src/assets/Images/Hair2.jpg";
+import lady2 from "../assets/Images/model5.png"
 
 const info = [
   {
@@ -47,7 +48,7 @@ const Home = () => {
     <Icon />
     <Testimonial />
     <Newsletter />
-    <Appointment />
+    <Appointment appImg={lady2} objectPosition={"object-top"}/>
     
 
     </>
