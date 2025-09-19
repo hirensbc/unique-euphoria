@@ -18,9 +18,9 @@ export default function Footer() {
               more!
             </p>
           </div>
-          <div className="hidden lg:block border-l border-gray-700 h-25 justify-center"></div>
+    <div className="hidden lg:block border-l border-gray-700 flex-shrink-0 h-[80px] pr-50"></div>
 
-          {/* This container's responsiveness has been adjusted */}
+        
           <div className="flex-1 w-full lg:max-w-md">
             <div className="flex flex-row items-center bg-white rounded-full shadow-sm overflow-hidden px-1">
               <input
