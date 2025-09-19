@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 import { FaPlay } from "react-icons/fa";
+import { useResponser } from "../Hooks/useResponser";
 
 const PrevArrow = ({ onClick }) => (
   <button
@@ -30,13 +31,13 @@ const NextArrow = ({ onClick }) => (
 const RealLife = ({ title, subtitle, testimonials }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const dataToShow = testimonials || [];
-
+const slidesToShow = useResponser()
   const settings = useMemo(
     () => ({
       dots: false,
       infinite: true,
       speed: 600,
-      slidesToShow: 3,
+      slidesToShow,
       slidesToScroll: 1,
       prevArrow: <PrevArrow />,
       nextArrow: <NextArrow />,
@@ -45,7 +46,7 @@ const RealLife = ({ title, subtitle, testimonials }) => {
         { breakpoint: 640, settings: { slidesToShow: 1 } },
       ],
     }),
-    []
+    [slidesToShow]
   );
 
   return (

@@ -11,7 +11,7 @@ import model15 from "../assets/Images/model15.png";
 import model16 from "../assets/Images/model16.png";
 import model17 from "../assets/Images/model17.png";
 import model18 from "../assets/Images/model18.png";
-
+import { useResponser } from "../Hooks/useResponser";
 import Hair1 from "../assets/Images/Hair5.jpg";
 import Hair2 from "../assets/Images/Hair3.jpg";
 import Hair3 from "../assets/Images/itip.png";
@@ -99,6 +99,7 @@ const PrevArrow = ({ onClick }) => (
 );
 
 const Collection = () => {
+  const slidesToShow = useResponser();
   const [extensionCategory, setExtensionCategory] = useState("All");
   const [wigsCategory, setWigsCategory] = useState("All");
   const [bestSellerCategory, setBestSellerCategory] = useState("All");
@@ -146,7 +147,7 @@ const Collection = () => {
     dots: false,
     infinite: true,
     speed: 600,
-    slidesToShow: 3,
+    slidesToShow,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
