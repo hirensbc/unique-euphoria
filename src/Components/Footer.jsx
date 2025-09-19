@@ -4,7 +4,7 @@ import logo from "../assets/Images/logo1.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white text-sm font-sans">
+    <footer className="bg-black  text-white text-sm ">
       <div className="w-full border-b border-gray-700 pt-10 px-6 lg:px-20"></div>
 
       <div className="py-10 px-6 lg:px-20">
@@ -39,15 +39,18 @@ export default function Footer() {
       </div>
 
       <div className="w-full border-b border-gray-700 py-4 px-6 lg:px-20"></div>
-
-      <div className="py-10 px-6 lg:px-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 text-center lg:text-left ">
+      <div className="py-14 px-6 lg:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 text-center lg:text-left">
+          
           <div>
-            <h3 className="text-white font-semibold mb-4 font-mariposa">
-              
-              <img src={logo} alt="" srcset="" />
+            <h3 className="mb-10">
+              <img
+                src={logo}
+                alt="Unique Euphoria"
+                className="mx-auto lg:mx-0"
+              />
             </h3>
-            <p className="mb-4 text-white text-sm leading-relaxed font-montserrat">
+            <p className="text-white text-base leading-7 font-montserrat mb-12">
               At Unique Euphoria, we offer premium-quality hair extensions and
               wigs that enhance your beauty and confidence. Elevate your style
               with our luxurious, natural-looking products designed to bring out
@@ -75,11 +78,12 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="px-28" >
-            <h3 className="text-white font-semibold  mb-4 font-mariposa">
+          {/* Column 2 - Quick Links */}
+          <div>
+            <h3 className="text-white font-semibold mb-6 font-mariposa">
               Quick Links
             </h3>
-            <ul className="space-y-2 font-montserrat ">
+            <ul className="space-y-4 font-montserrat text-base">
               {[
                 "Home",
                 "Products",
@@ -101,11 +105,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="px-28">
-            <h3 className="text-white font-semibold mb-4 font-mariposa">
+          {/* Column 3 - Our Services */}
+          <div>
+            <h3 className="text-white font-semibold mb-6 font-mariposa">
               Our Services
             </h3>
-            <ul className="space-y-2 font-montserrat">
+            <ul className="space-y-4 font-montserrat text-base">
               {["Volume", "Length", "Coverage", "Style", "Color"].map(
                 (service) => (
                   <li key={service}>
@@ -121,14 +126,15 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Column 4 - Get in Touch */}
           <div>
-            <h3 className="text-white font-semibold mb-4 font-mariposa">
+            <h3 className="text-white font-semibold mb-6 font-mariposa">
               Get in Touch
             </h3>
-            <ul className="space-y-2 font-montserrat ">
+            <ul className="space-y-4 font-montserrat text-base">
               <li>+91 00000 00000</li>
               <li>
-                Buddha Jadawadi,
+                Budhia Jadawadi,
                 <br />
                 Opp Digital Equipment Ltd,
                 <br />
@@ -141,13 +147,13 @@ export default function Footer() {
 
       <div className="w-full border-b border-gray-700"></div>
 
-      <div className="max-w-8xl py-4 text-white lg:px-5 flex xs:justify-center xs:items-center xs:flex-col xs:flex lg:justify-end lg:flex-row text-xs md:space-x-200">
-        <p className="mb-2 lg:mb-0  lg:text-base xs:text-[10px] md:mb-0">
+      <div className="w-full max-w-8xl py-4 text-white lg:px-5 flex flex-col lg:flex-row items-center relative text-xs">
+        <p className="text-center font-montserrat w-full lg:absolute lg:left-1/2 lg:-translate-x-1/2">
           © 2025 Unique Euphoria. All rights reserved.
         </p>
-        <div className="flex space-x-10 xs:space-x-1 sm:block lg:mt-0 lg:justify-end ">
-          {/* <div className="flex space-x-6 mt-2 lg:mt-0 justify-center lg:justify-end"> */}
-          <a href="#" className="hover:underline mr-5">
+
+        <div className="flex space-x-6 lg:ml-auto mt-2 lg:mt-0 px-18">
+          <a href="#" className="hover:underline font-montserrat">
             Terms and Condition
           </a>
           <a href="#" className="hover:underline font-montserrat">
