@@ -128,7 +128,7 @@ const Hero = () => {
                   className="w-full h-24 sm:h-32 lg:h-36 object-cover rounded-xl"
                 />
                 <div className="flex items-center justify-between w-full mt-2">
-                  <p className="text-sm sm:text-base font-medium font-montserrat text-gray-800">
+                  <p className="text-sm sm:text-base font-medium font-montserrat text-black">
                     {item.name}
                   </p>
                   <MdArrowOutward className="text-base sm:text-lg text-black" />

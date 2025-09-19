@@ -2,7 +2,7 @@ import React from 'react';
 import myModelImage from '../../src/assets/Images/model5.png';
 
 const Appointment = ({appImg, objectPosition}) => {
-  console.log(objectPosition);
+  console.log(appImg);
   
   return (
     <div className="relative w-full flex flex-col md:flex-row">

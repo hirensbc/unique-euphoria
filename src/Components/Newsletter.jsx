@@ -39,7 +39,7 @@ const Newsletter = () => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 font-mariposa">News & Blogs</h2>
+        <h2 className="text-3xl font-bold text-black font-mariposa">News & Blogs</h2>
         <p className="text-black mt-2 font-montserrat">Latest Updates & Expert Insights</p>
 
         <div className="grid gap-8 md:grid-cols-3 mt-10">
@@ -54,10 +54,10 @@ const Newsletter = () => {
                 className="w-full h-52 object-cover"
               />
               <div className="p-6 text-left">
-                <h3 className="text-lg font-semibold font-mariposa text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold font-mariposa text-black mb-2">
                   {blog.title}
                 </h3>
-                <p className="text-gray-600 text-sm font-montserrat">{blog.description}</p>
+                <p className="text-black text-sm font-montserrat">{blog.description}</p>
               </div>
             </div>
           ))}

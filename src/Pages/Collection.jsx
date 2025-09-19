@@ -77,7 +77,7 @@ const NextArrow = ({ onClick }) => (
     onClick={onClick}
     className="absolute right-0 top-1/2 transform -translate-y-1/2 
              w-12 h-12 flex items-center justify-center 
-             bg-white text-gray-800 font-montserrat font-medium 
+             bg-white text-black font-montserrat font-medium 
              rounded-full shadow 
              hover:text-white hover:bg-[var(--primary)] 
              transition duration-300 ease-in-out cursor-pointer"

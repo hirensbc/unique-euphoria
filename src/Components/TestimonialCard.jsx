@@ -33,10 +33,10 @@ const TestimonialCard = () => {
           </div>
 
           <div className="w-full md:w-1/2 mx-9">
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 font-mariposa text-center md:text-left">
+            <h1 className="text-2xl md:text-3xl font-bold text-black mb-4 font-mariposa text-center md:text-left">
               Love And Care
             </h1>
-            <p className="text-gray-600 mb-6 text-justify text-sm md:text-base w-90 font-montserrat">
+            <p className="text-black mb-6 text-justify text-sm md:text-base w-90 font-montserrat">
               At Unique Euphoria, we believe beauty is about confidence and
               empowerment. We support communities through charitable
               initiatives, helping individuals with hair loss and empowering

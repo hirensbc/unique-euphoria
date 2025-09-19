@@ -33,11 +33,11 @@ const InfoSection = ({ info }) => {
             }`}
           >
             <h2
-              className="lg:text-[55px] font-bold text-black mb-4 mx-auto font-mariposa"
+              className="lg:text-[55px] font-medium text-black mb-4 mx-auto font-mariposa"
               dangerouslySetInnerHTML={{ __html: sec.title }}
             />
             <p
-              className="text-black mb-6 xs:mx-auto lg:mx-0 text-justify lg:text-left md:text-left lg:text-[18px] xs:text-sm xs:w-80 xs:text-justify sm:text-center sm:text-justify lg:w-100 font-montserrat"
+              className="text-black font-medium mb-6 xs:mx-auto lg:mx-0 text-justify lg:text-left md:text-left lg:text-[18px] xs:text-sm xs:w-80 xs:text-justify  sm:text-justify lg:w-100 font-montserrat"
               dangerouslySetInnerHTML={{ __html: sec.desc }}
             >
               {/* {sec.desc} */}

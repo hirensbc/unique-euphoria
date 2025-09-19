@@ -118,7 +118,7 @@ const Products = () => {
             {products.map((item) => (
               <div key={item.id} className="px-3">
                 <div className="flex flex-col items-center w-full">
-                  <div className="bg-white rounded-2xl shadow-md overflow-hidden w-130 relative">
+                  <div className="bg-white rounded-2xl shadow-md overflow-hidden w-130 md:w-100   relative">
                     <img
                       src={item.img}
                       alt={item.name}

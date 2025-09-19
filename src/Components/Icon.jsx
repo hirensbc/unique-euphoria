@@ -23,7 +23,7 @@ const Icon = () => {
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-mariposa text-black mb-2">
           Why Unique Euphoria
         </h2>
-        <p className="text-gray-600 mb-10 sm:mb-12 font-montserrat">
+        <p className="text-black mb-10 sm:mb-12 font-montserrat">
           The Unique Euphoria Difference
         </p>
 
@@ -47,7 +47,7 @@ const Icon = () => {
                 </div>
               </div>
 
-              <p className="mt-3 text-sm font-medium text-gray-700 font-montserrat">
+              <p className="mt-3 text-sm font-medium text-black font-montserrat">
                 {feature.title}
               </p>
             </div>
