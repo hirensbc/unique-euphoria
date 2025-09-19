@@ -31,7 +31,7 @@ const NextArrow = ({ onClick }) => (
 const RealLife = ({ title, subtitle, testimonials }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const dataToShow = testimonials || [];
-const slidesToShow = useResponser()
+  const slidesToShow = useResponser();
   const settings = useMemo(
     () => ({
       dots: false,
@@ -52,10 +52,10 @@ const slidesToShow = useResponser()
   return (
     <section className="py-16 w-full mx-auto bg-gradient-to-r from-[#BE9B81] to-[#ECDED3]  ">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl lg:text-4xl font-bold font-mariposa mb-3 text-black">
+        <h2 className="text-3xl lg:text-[42px] font-bold font-mariposa mb-3 text-black">
           {title}
         </h2>
-        <p className="text-black mb-8 font-montserrat">{subtitle}</p>
+        <p className="text-black mb-8 lg:text-[18px] sm:text-[12px] font-montserrat">{subtitle}</p>
 
         <div className="relative">
           <Slider {...settings}>

@@ -30,7 +30,7 @@ const Appointment = ({appImg, objectPosition}) => {
           <p className="text-black mb-3 font-semibold lg:text-[18px] md:text-base sm:text-base font-montserrat">
             Expert Advice Just a Click Away!
           </p>
-          <button className="bg-black font-montserrat text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-colors duration-300 text-sm md:text-base cursor-pointer">
+          <button className="bg-black font-montserrat text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-colors duration-300 lg:text-[16px] sm:text-sm xs:text-sm md:text-base cursor-pointer">
             Get Appointment
           </button>
         </div>

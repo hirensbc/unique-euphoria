@@ -77,7 +77,7 @@ const Products = () => {
       centerMode: true,
       centerPadding: "60",
       infinite: true,
-      initialSlide: 0,
+      initialSlide: 1,
       speed: 500,
       slidesToShow,
       slidesToScroll: 1,

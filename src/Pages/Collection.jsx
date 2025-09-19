@@ -144,8 +144,10 @@ const Collection = () => {
   );
 
   const settings = {
-    dots: false,
-    infinite: true,
+      centerMode: true,
+      centerPadding: "60",
+      infinite: true,
+      initialSlide: 0,
     speed: 600,
     slidesToShow,
     slidesToScroll: 1,

@@ -60,7 +60,7 @@ const ProductSlider = ({
     centerPadding: "60px",
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
