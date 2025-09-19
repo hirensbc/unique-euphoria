@@ -74,9 +74,11 @@ const Products = () => {
 
   const settings = useMemo(
     () => ({
-      dots: false,
+      centerMode: true,
+      centerPadding: "60",
       infinite: true,
-      speed: 600,
+      initialSlide: 0,
+      speed: 500,
       slidesToShow,
       slidesToScroll: 1,
       prevArrow: <PrevArrow />,
@@ -139,10 +141,10 @@ const Products = () => {
                   </div>
 
                   <div className="mt-4 text-center">
-                    <h3 className="text-lg font-semibold text-white">
+                    <h3 className="text-lg  text-white font-montserrat">
                       {item.name}
                     </h3>
-                    <p className="text-sm text-gray-300 font-medium font-montserrat">
+                    <p className="text-sm text-gray-300 font-mariposa font-semibold ">
                       {item.subtitle}
                     </p>
                   </div>

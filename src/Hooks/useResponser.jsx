@@ -2,11 +2,11 @@
 import { useState, useEffect } from "react";
 
 const getSlidesForWidth = (w) => {
-//   if (w <= 375) return 1; // xs
+
   if (w <= 480) return 1; // small phones
   if (w <= 1024) return 2; // small phones
   if (w <= 1300) return 3; // tablets / small laptops
-  return 3; // large desktops
+  return 3;
 };
 
 export function useResponser(defaultSlides = 4) {
