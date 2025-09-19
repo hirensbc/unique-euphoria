@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useResponser } from "../Hooks/useResponser";
 
 const PrevArrow = ({ onClick }) => (
   <button
@@ -27,6 +28,8 @@ const NextArrow = ({ onClick }) => (
 );
 
 const Products = () => {
+  const slidesToShow = useResponser();
+
   const products = useMemo(
     () => [
       {
@@ -74,7 +77,7 @@ const Products = () => {
       dots: false,
       infinite: true,
       speed: 600,
-      slidesToShow: 3,
+      slidesToShow,
       slidesToScroll: 1,
       prevArrow: <PrevArrow />,
       nextArrow: <NextArrow />,
@@ -83,11 +86,11 @@ const Products = () => {
         { breakpoint: 640, settings: { slidesToShow: 1 } },
       ],
     }),
-    []
+    [slidesToShow]
   );
 
   return (
-    <section className="bg-black text-white py-16 relative">
+    <section className="bg-black text-white py-16 lg:mt-0 xs:mt-8 relative">
       <div className="max-w-[80%] mx-auto px-6 text-center">
         <h2 className="text-3xl  lg:text-4xl font-bold mb-3 font-mariposa">
           Explore Our Products

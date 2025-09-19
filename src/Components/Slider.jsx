@@ -1,8 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
+import { useResponser } from "../Hooks/useResponser";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 const NextArrow = ({ onClick }) => (
   <button
@@ -52,11 +54,12 @@ const ProductSlider = ({
   activeCategory,
   setActiveCategory,
 }) => {
+const slidesToShow = useResponser();
   const settings = {
     dots: false,
     infinite: true,
     speed: 600,
-    slidesToShow: 3,
+    slidesToShow,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,

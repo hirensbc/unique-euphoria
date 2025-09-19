@@ -5,7 +5,7 @@ import Hair2 from "../../src/assets/Images/Hair2.jpg";
 
 const InfoSection = ({ info }) => {
   return (
-    <div className="flex flex-col items-center justify-center px-0 md:px-0 bg-white no-space">
+    <div className="flex xs:py-10 flex-col items-center justify-center px-0 md:px-0 bg-white ">
       {info.map((sec, idx) => (
         <div
           key={idx}

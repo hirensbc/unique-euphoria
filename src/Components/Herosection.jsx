@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 import { MdArrowOutward } from "react-icons/md";
+import {useResponser} from "../Hooks/useResponser"
 
 import Group from "../../src/assets/Images/Group.png";
 import Hair2 from "../../src/assets/Images/Hair2.jpg";
@@ -13,7 +14,7 @@ import Hair3 from "../../src/assets/Images/Hair3.jpg";
 
 const Hero = () => {
   const sliderRef = useRef(null);
-
+  const slidesToShow = useResponser();
   const categories = useMemo(
     () => [
       { name: "Topper Collection", img: Hair2 },
@@ -29,26 +30,26 @@ const Hero = () => {
   );
 
   // real control of slider responsiveness
-  const getSlidesForWidth = (w) => {
-    if (w <= 375) return 1; // xs
-    if (w <= 480) return 1; // small phones
-    if (w <= 1300) return 3; // tablets / small laptops
-    return 4; // large desktops
-  };
+  // const getSlidesForWidth = (w) => {
+  //   if (w <= 375) return 1; // xs
+  //   if (w <= 480) return 1; // small phones
+  //   if (w <= 1300) return 3; // tablets / small laptops
+  //   return 4; // large desktops
+  // };
 
-  const [slidesToShow, setSlidesToShow] = useState(4);
+  // const [slidesToShow, setSlidesToShow] = useState(4);
 
-  useEffect(() => {
-    // set on mount
-    const update = () => {
-      setSlidesToShow(getSlidesForWidth(window.innerWidth));
-    };
-    update();
+  // useEffect(() => {
+  //   // set on mount
+  //   const update = () => {
+  //     setSlidesToShow(getSlidesForWidth(window.innerWidth));
+  //   };
+  //   update();
 
-    // listen for resize (simple - no debounce; add debounce if you want)
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, []);
+  //   // listen for resize (simple - no debounce; add debounce if you want)
+  //   window.addEventListener("resize", update);
+  //   return () => window.removeEventListener("resize", update);
+  // }, []);
 
   const settings = useMemo(
     () => ({
@@ -74,7 +75,7 @@ const Hero = () => {
           <p className="text-xs sm:text-xl tracking-wide text-black font-montserrat font-medium">
             Luxurious, Confident, and Empowering
           </p>
-          <h1 className="2xl:text-7xl md:text-4xl lg:text-7xl font-mariposa font-bold text-[#BE9B81] leading-tight">
+          <h1 className="2xl:text-7xl md:text-4xl lg:text-7xl xs:text-4xl font-mariposa font-bold text-[#BE9B81] leading-tight">
             Luxury Hair, <br /> Timeless Beauty
           </h1>
           <p className="md:text-2xl font-semibold sm:text-lg font-forum text-black max-w-md ">
