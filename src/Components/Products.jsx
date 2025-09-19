@@ -74,9 +74,11 @@ const Products = () => {
 
   const settings = useMemo(
     () => ({
-      dots: false,
+      centerMode: true,
+      centerPadding: "60",
       infinite: true,
-      speed: 600,
+      initialSlide: 0,
+      speed: 500,
       slidesToShow,
       slidesToScroll: 1,
       prevArrow: <PrevArrow />,
@@ -115,7 +117,7 @@ const Products = () => {
           </button>
         </div>
 
-        <div className="relative">
+        <div className="relative  max-auto ">
           <Slider {...settings}>
             {products.map((item) => (
               <div key={item.id} className="px-3">
@@ -127,9 +129,9 @@ const Products = () => {
                       className="w-full lg:h-100 xs:h-80"
                     />
 
-                    <div className="absolute inset-0 flex justify-center items-end mb-4 cursor-pointer font-montserrat xs:w-80 lg:w-100">
-                      <div className="bg-white rounded-full flex items-center shadow px-1 py-1 lg:w-65 xs:w-80">
-                        <span className="bg-black text-white text-xs sm:text-sm px-9 py-1 rounded-full">
+                    <div className="absolute inset-0 flex justify-center items-end pr-20 mb-4 cursor-pointer font-montserrat xs:w-80 lg:w-100">
+                      <div className="bg-white rounded-full flex items-center shadow px-1 py-1 lg:w-65 xs:w-80 ">
+                        <span className="bg-black text-white text-xs sm:text-sm px-9 py-1 rounded-full ">
                           100%
                         </span>
                         <span className="text-black text-xs sm:text-sm pl-6 py-1 rounded-full">
@@ -140,10 +142,10 @@ const Products = () => {
                   </div>
 
                   <div className="mt-4 text-center">
-                    <h3 className="text-lg font-semibold text-white">
+                    <h3 className="text-lg  text-white font-montserrat">
                       {item.name}
                     </h3>
-                    <p className="text-sm text-gray-300 font-medium font-montserrat">
+                    <p className="text-sm text-gray-300 font-mariposa font-semibold ">
                       {item.subtitle}
                     </p>
                   </div>

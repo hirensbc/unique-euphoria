@@ -6,7 +6,7 @@ const getSlidesForWidth = (w) => {
   if (w <= 480) return 1; // small phones
   if (w <= 1024) return 2; // small phones
   if (w <= 1300) return 3; // tablets / small laptops
-  return 4; // large desktops
+  return 3; // large desktops
 };
 
 export function useResponser(defaultSlides = 4) {
