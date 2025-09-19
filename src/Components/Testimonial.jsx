@@ -51,8 +51,8 @@ const Testimonial = () => {
     <div className="bg-black">
       <div className="bg-black text-white py-5 lg:px-20 max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-semibold mb-2 mt-5">Customer Testimonials</h2>
-          <p className="text-white font-montserrat">Real Stories from Happy Customers</p>
+          <h2 className="text-4xl font-medium mb-2 mt-5 ">Customer Testimonials</h2>
+          <p className="text-white font-medium font-montserrat">Real Stories from Happy Customers</p>
         </div>
 
         <Slider {...settings} ref={sliderRef}>

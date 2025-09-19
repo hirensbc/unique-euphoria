@@ -41,6 +41,7 @@ const Testimonials = () => {
       </h1>
 
       <RealLife
+      className="font-medium "
         title="Client Stories"
         subtitle="How Unique Euphoria Changed Their Look"
         testimonials={clientStory}
@@ -48,6 +49,7 @@ const Testimonials = () => {
       <Testimonial />
 
       <RealLife
+        className="font-medium "
         title="See It In Real Life"
         subtitle="Bringing Concepts to Life - See, Feel, and Experience the Difference"
         testimonials={realLifeData}

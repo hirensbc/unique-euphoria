@@ -20,15 +20,19 @@ const Navbar = ({ textColor = "text-black" }) => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? " font-semibold" : "hover:text-[#7c5a3a]"
+              `font-medium text-black ${
+                isActive ? "font-semibold" : "hover:text-[#7c5a3a]"
+              }`
             }
           >
             Home
           </NavLink>
           <NavLink
             to="/about"
-            className={({ isActive }) =>
-              isActive ? " font-semibold" : "hover:text-[#7c5a3a]"
+              className={({ isActive }) =>
+              `font-medium text-black ${
+                isActive ? "font-semibold" : "hover:text-[#7c5a3a]"
+              }`
             }
           >
             About
@@ -36,19 +40,23 @@ const Navbar = ({ textColor = "text-black" }) => {
           <NavLink
             to="/testimonials"
             className={({ isActive }) =>
-              isActive ? " font-semibold" : "hover:text-[#7c5a3a]"
+              `font-medium text-black ${
+                isActive ? "font-semibold" : "hover:text-[#7c5a3a]"
+              }`
             }
           >
             Testimonials
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/awards"
             className={({ isActive }) =>
-              isActive ? " font-semibold" : "hover:text-[#7c5a3a]"
+              `font-medium text-black ${
+                isActive ? "font-semibold" : "hover:text-[#7c5a3a]"
+              }`
             }
           >
             Awards
-          </NavLink>
+          </NavLink> */}
         </nav>
 
         <NavLink
@@ -56,7 +64,7 @@ const Navbar = ({ textColor = "text-black" }) => {
           className={({ isActive }) =>
             isActive
               ? "hidden md:block px-5 py-2 rounded-full font-montserrat font-medium text-white bg-[var(--primary)] transition duration-300 ease-in-out"
-              : "hidden md:block px-5 py-2 rounded-full font-montserrat font-medium text-gray-800 bg-white hover:text-white hover:bg-[var(--primary)] transition duration-300 ease-in-out"
+              : "hidden md:block px-5 py-2 rounded-full font-montserrat font-medium text-black bg-white hover:text-white hover:bg-[var(--primary)] transition duration-300 ease-in-out"
           }
         >
           Explore Collection
@@ -107,7 +115,7 @@ const Navbar = ({ textColor = "text-black" }) => {
             </NavLink>
             <NavLink
               to="/collection"
-              className="px-5 py-2 rounded-full text-gray-800 bg-white border border-[#E0AC85] font-medium hover:text-white hover:bg-[var(--primary)] transition duration-300 ease-in-out"
+              className="px-5 py-2 rounded-full text-black bg-white border border-[#E0AC85] font-medium hover:text-white hover:bg-[var(--primary)] transition duration-300 ease-in-out"
             >
               Explore Collection
             </NavLink>

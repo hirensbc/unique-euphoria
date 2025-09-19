@@ -30,7 +30,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="px-4 py-2 md:px-6 md:py-3 bg-[#BE9B81] text-white text-sm font-medium font-montserrat m-2 rounded-full transition-all duration-300 hover:bg-[#a67f67] hover:shadow-lg"
+                className="px-4 py-2 md:px-6 md:py-3 bg-[#BE9B81] text-white text-sm font-medium font-montserrat m-2 rounded-full transition-all duration-300 hover:bg-[#a67f67] hover:shadow-lg cursor-pointer"
               >
                 Subscribe
               </button>

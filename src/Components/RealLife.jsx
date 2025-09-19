@@ -10,7 +10,7 @@ const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
     className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2 
-    w-10 h-10 flex items-center justify-center bg-white text-gray-800 rounded-full 
+    w-10 h-10 flex items-center justify-center bg-white text-black rounded-full 
     shadow-md border hover:bg-[#E0AC85] hover:text-white transition z-10 cursor-pointer"
   >
     <IoIosArrowRoundBack className="text-2xl" />
@@ -21,7 +21,7 @@ const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
     className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 
-    w-10 h-10 flex items-center justify-center bg-white text-gray-800 rounded-full 
+    w-10 h-10 flex items-center justify-center bg-white text-black rounded-full 
     shadow-md border hover:bg-[#E0AC85] hover:text-white transition z-10 cursor-pointer"
   >
     <IoIosArrowRoundForward className="text-2xl" />

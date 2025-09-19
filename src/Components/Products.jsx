@@ -144,7 +144,7 @@ const Products = () => {
                     <h3 className="text-lg  text-white font-montserrat">
                       {item.name}
                     </h3>
-                    <p className="text-sm text-gray-300 font-mariposa font-semibold ">
+                    <p className="text-sm text-black font-mariposa font-semibold ">
                       {item.subtitle}
                     </p>
                   </div>
