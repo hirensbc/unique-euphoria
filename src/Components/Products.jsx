@@ -121,11 +121,11 @@ const Products = () => {
                     <img
                       src={item.img}
                       alt={item.name}
-                      className="w-full h-110"
+                      className="w-full lg:h-100 xs:h-80"
                     />
 
-                    <div className="absolute inset-0 flex justify-center items-end mb-4 cursor-pointer font-montserrat w-100">
-                      <div className="bg-white rounded-full flex items-center shadow px-1 py-1 w-65">
+                    <div className="absolute inset-0 flex justify-center items-end mb-4 cursor-pointer font-montserrat xs:w-80 lg:w-100">
+                      <div className="bg-white rounded-full flex items-center shadow px-1 py-1 lg:w-65 xs:w-80">
                         <span className="bg-black text-white text-xs sm:text-sm px-9 py-1 rounded-full">
                           100%
                         </span>

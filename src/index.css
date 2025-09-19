@@ -18,10 +18,10 @@
   font-style: normal;
 }
 
-.font-mariposa{
+.font-mariposa {
   font-family: "Mariposa", serif;
 }
-.font-signature{
+.font-signature {
   font-family: "Brittany";
 }
 :root {
@@ -180,3 +180,6 @@
     #00000000
   );
 }
+/* .slick-slide > div {
+  min-width: 0;
+} */
