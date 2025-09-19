@@ -93,18 +93,15 @@ const Products = () => {
 
   return (
     <section className="bg-black text-white py-16 lg:mt-0 xs:mt-8 flex flex-col items-end relative">
-        <h2 className="text-3xl  lg:text-4xl font-bold mb-3 font-mariposa mx-auto">
-          Explore Our Products
-        </h2>
-        <p className="text-white mx-auto mb-8 font-montserrat ">
-          Discover the Perfect Blend of Quality, Innovation, and Style
-        </p>
-      <div className="max-w-[95%] flex flex-col  px-6 text-center">
-
-        <div className="flex justify-between items-center mb-10">
-          <span
-            className="lg:px-8 lg:py-3 xs:px-2 xs:py-1.5 rounded-full text-white bg-[#be9b81] font-montserrat font-normal"
-          >
+      <h2 className="text-3xl  lg:text-[42px] font-medium mb-3 font-mariposa mx-auto">
+        Explore Our Products
+      </h2>
+      <p className="text-white mx-auto mb-8 lg:text-[18px] font-montserrat ">
+        Discover the Perfect Blend of Quality, Innovation, and Style
+      </p>
+      <div className="max-w-[100%] flex flex-col  px-6 text-center">
+        <div className="flex justify-between place-items-center mx-auto items-center w-[96.5%] mb-10">
+          <span className="lg:px-8 lg:py-3 xs:px-2 xs:py-1.5 rounded-full text-white bg-[#be9b81] font-montserrat font-normal">
             New Arrivals
           </span>
           <button
@@ -121,11 +118,11 @@ const Products = () => {
             {products.map((item) => (
               <div key={item.id} className="px-3">
                 <div className="flex flex-col items-center w-full">
-                  <div className="bg-transparent rounded-2xl shadow-md overflow-hidden w-full relative">
+                  <div className="bg-white rounded-2xl shadow-md overflow-hidden w-130 relative">
                     <img
                       src={item.img}
                       alt={item.name}
-                      className="w-full lg:h-100 xs:h-80"
+                      className="w-full lg:h-150 xs:h-80"
                     />
 
                     <div className="absolute inset-0 flex justify-center items-end mb-4 cursor-pointer font-montserrat lg:w-full xs:w-100 lg:w-100">
@@ -144,7 +141,7 @@ const Products = () => {
                     <h3 className="text-lg  text-white font-montserrat">
                       {item.name}
                     </h3>
-                    <p className="text-sm text-gray-300 font-mariposa font-semibold ">
+                    <p className="text-[22px] text-gray-300 font-mariposa font-semibold ">
                       {item.subtitle}
                     </p>
                   </div>

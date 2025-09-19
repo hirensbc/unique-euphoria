@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="w-full border-b border-gray-700 pt-10 px-6 lg:px-20"></div>
 
       <div className="py-10 px-6 lg:px-20">
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center  gap-100">
+        <div className="flex flex-col lg:flex-row lg:justify-between sm:gap-10 xs:gap-10 lg:items-center  lg:gap-100">
           <div className="text-center lg:text-left flex-1">
             <h2 className="text-2xl font-semibold text-white mb-2 font-mariposa">
               Ready To Glow?
@@ -18,7 +18,7 @@ export default function Footer() {
               more!
             </p>
           </div>
-          <div className="hidden lg:block border-l border-gray-500 h-35 justify-center"></div>
+          <div className="xs:hidden sm:hidden lg:block border-l border-gray-500 h-35 justify-center"></div>
 
         
           <div className="flex-1 w-full lg:max-w-md">
