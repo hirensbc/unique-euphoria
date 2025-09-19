@@ -84,11 +84,11 @@ const slidesToShow = useResponser()
                   <div className="absolute inset-0 flex justify-center items-end mb-0 lg:mt-0 xs:mt-5">
                     <button
                       onClick={() => setActiveIndex(index)}
-                      className={`cursor-pointer rounded-full font-montserrat shadow w-[250px] px-4 py-1 text-sm transition
+                      className={`cursor-pointer rounded-full font-montserrat w-[200px] px-4 py-1 text-sm transition border-3
             ${
               activeIndex === index
-                ? "bg-[#BE9B81] text-white border-[#fff]"
-                : "bg-white text-black border-[#ECDED3] hover:bg-[#E0AC85] hover:text-white"
+                ? "bg-[#BE9B81] text-white border-[#ECDED3]"
+                : "bg-white text-black border-[#ECDED3] hover:bg-[#BE9B81] hover:text-white"
             }
           `}
                     >

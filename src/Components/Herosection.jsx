@@ -107,10 +107,10 @@ const Hero = () => {
         </div>
 
         {/* Next */}
-        <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:pr-4 z-20">
+        <div className="absolute inset-y-0 md:left-22 xs:right-0 flex items-center pr-2 sm:pr-4 z-20">
           <button
             onClick={() => sliderRef.current?.slickNext()}
-            className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-[var(--primary)] border-1 border-[var(--primary)]
+            className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-transparent border-1
                  hover:text-white hover:bg-[var(--primary)] transition cursor-pointer duration-300 ease-in-out"
             aria-label="next"
           >
@@ -118,7 +118,7 @@ const Hero = () => {
           </button>
         </div>
 
-        <Slider {...settings} className="px-4 sm:px-6" ref={sliderRef}>
+        <Slider {...settings} className="px-4 sm:px-6 md:ml-50" ref={sliderRef}>
           {categories.map((item, idx) => (
             <div key={idx} className="px-2 sm:px-3">
               <div className="p-4 flex flex-col items-center gap-2 bg-white rounded-2xl shadow-sm hover:shadow-lg transition min-w-0">
