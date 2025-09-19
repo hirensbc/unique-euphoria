@@ -117,7 +117,7 @@ const Products = () => {
           </button>
         </div>
 
-        <div className="relative  max-auto ">
+        <div className="relative">
           <Slider {...settings}>
             {products.map((item) => (
               <div key={item.id} className="px-3">
