@@ -90,24 +90,23 @@ const Products = () => {
   );
 
   return (
-    <section className="bg-black text-white py-16 lg:mt-0 xs:mt-8 relative">
-      <div className="max-w-[80%] mx-auto px-6 text-center">
-        <h2 className="text-3xl  lg:text-4xl font-bold mb-3 font-mariposa">
+    <section className="bg-black text-white py-16 lg:mt-0 xs:mt-8 flex flex-col items-end relative">
+        <h2 className="text-3xl  lg:text-4xl font-bold mb-3 font-mariposa mx-auto">
           Explore Our Products
         </h2>
-        <p className="text-white mb-8 font-montserrat ">
+        <p className="text-white mx-auto mb-8 font-montserrat ">
           Discover the Perfect Blend of Quality, Innovation, and Style
         </p>
+      <div className="max-w-[95%] flex flex-col  px-6 text-center">
 
         <div className="flex justify-between items-center mb-10">
-          <button
-            className="cursor-pointer px-5 py-1 rounded-full text-gray-800 bg-[#be9b81] font-montserrat font-medium 
-                             hover:bg-[#E0AC85] hover:text-white transition duration-300 ease-in-out"
+          <span
+            className="lg:px-8 lg:py-3 xs:px-2 xs:py-1.5 rounded-full text-white bg-[#be9b81] font-montserrat font-normal"
           >
             New Arrivals
-          </button>
+          </span>
           <button
-            className="cursor-pointer border border-gray-400 px-5 py-1 rounded-full text-sm 
+            className="cursor-pointer border border-gray-400 lg:px-8 lg:py-3 xs:px-2 xs:py-1.5 rounded-full text-sm 
                              transition duration-300 ease-in-out font-montserrat
                              hover:bg-[#E0AC85] hover:text-white hover:border-[#E0AC85]"
           >
@@ -127,7 +126,7 @@ const Products = () => {
                       className="w-full lg:h-100 xs:h-80"
                     />
 
-                    <div className="absolute inset-0 flex justify-center items-end mb-4 cursor-pointer font-montserrat xs:w-80 lg:w-100">
+                    <div className="absolute inset-0 flex justify-center items-end mb-4 cursor-pointer font-montserrat lg:w-full xs:w-100 lg:w-100">
                       <div className="bg-white rounded-full flex items-center shadow px-1 py-1 lg:w-65 xs:w-80">
                         <span className="bg-black text-white text-xs sm:text-sm px-9 py-1 rounded-full">
                           100%

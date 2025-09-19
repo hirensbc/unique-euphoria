@@ -18,7 +18,7 @@ export default function Footer() {
               more!
             </p>
           </div>
-          <div className="hidden lg:block border-l border-white h-35 justify-center"></div>
+          <div className="hidden lg:block border-l border-gray-500 h-35 justify-center"></div>
 
         
           <div className="flex-1 w-full lg:max-w-md">

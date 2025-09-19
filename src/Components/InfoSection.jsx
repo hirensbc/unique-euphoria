@@ -22,7 +22,7 @@ const InfoSection = ({ info }) => {
             <img
               src={sec.img}
               alt="Hair Collection"
-              className="lg:w-[830px] lg:h-[500px] xs:h-[200px] xs:w-full xs:rounded-lg object-cover shadow-md"
+              className="lg:w-[830px] lg:h-[500px] xs:h-[200px] xs:w-full object-cover shadow-md"
             />
           </div>
 
@@ -33,11 +33,11 @@ const InfoSection = ({ info }) => {
             }`}
           >
             <h2
-              className="text-3xl font-bold text-black mb-4 mx-auto font-mariposa"
+              className="lg:text-[55px] font-bold text-black mb-4 mx-auto font-mariposa"
               dangerouslySetInnerHTML={{ __html: sec.title }}
             />
             <p
-              className="text-black mb-6 xs:mx-auto lg:mx-0 text-justify lg:text-left md:text-left xs:text-sm xs:w-80 xs:text-justify sm:text-center sm:text-justify w-full font-montserrat"
+              className="text-black mb-6 xs:mx-auto lg:mx-0 text-justify lg:text-left md:text-left lg:text-[18px] xs:text-sm xs:w-80 xs:text-justify sm:text-center sm:text-justify lg:w-100 font-montserrat"
               dangerouslySetInnerHTML={{ __html: sec.desc }}
             >
               {/* {sec.desc} */}

@@ -31,7 +31,7 @@ const info = [
   {
     img: Hair2,
     title: "Style With <br /> Confidence",
-    desc: "Unleash your beauty with premium quality hair that speaks volumes!Whether you love sleek and straight, bold and curly, or luxurious waves,<br/>Unique Euphoria has the perfect bundles to match your vibe.",
+    desc: "Unleash your beauty with premium quality hair that speaks volumes! Whether you love sleek and straight, bold and curly, or luxurious waves, Unique Euphoria has the perfect bundles to match your vibe.",
     reverse: false,
     button: "Explore Styling Tips",
   },
