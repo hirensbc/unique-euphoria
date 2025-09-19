@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
           <div className="hidden lg:block border-l border-white h-35 justify-center"></div>
 
-          {/* This container's responsiveness has been adjusted */}
+        
           <div className="flex-1 w-full lg:max-w-md">
             <div className="flex flex-row items-center bg-white rounded-full shadow-sm overflow-hidden px-1">
               <input
