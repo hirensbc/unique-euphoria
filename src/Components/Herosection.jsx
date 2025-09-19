@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from "react";
+import React, { useRef, useMemo, useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,25 +28,48 @@ const Hero = () => {
     []
   );
 
+  // real control of slider responsiveness
+  const getSlidesForWidth = (w) => {
+    if (w <= 375) return 1; // xs
+    if (w <= 480) return 1; // small phones
+    if (w <= 1300) return 3; // tablets / small laptops
+    return 4; // large desktops
+  };
+
+  const [slidesToShow, setSlidesToShow] = useState(4);
+
+  useEffect(() => {
+    // set on mount
+    const update = () => {
+      setSlidesToShow(getSlidesForWidth(window.innerWidth));
+    };
+    update();
+
+    // listen for resize (simple - no debounce; add debounce if you want)
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
   const settings = useMemo(
     () => ({
       dots: false,
       arrows: false,
       infinite: true,
       speed: 600,
-      slidesToShow: 4,
+      slidesToShow,
       slidesToScroll: 1,
+      // keep these breakpoint settings as fallback, but main control is slidesToShow state
       responsive: [
-        { breakpoint: 1024, settings: { slidesToShow: 2 } },
-        { breakpoint: 640, settings: { slidesToShow: 1 } },
+        { breakpoint: 1300, settings: { slidesToShow: 3 } },
+        { breakpoint: 480, settings: { slidesToShow: 1 } },
       ],
     }),
-    []
+    [slidesToShow]
   );
 
   return (
     <section className="relative lg:py-16 px-4 sm:px-6 lg:px-12 gradient-background">
-      <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6 text-left">
           <p className="text-xs sm:text-xl tracking-wide text-black font-montserrat font-medium">
             Luxurious, Confident, and Empowering
@@ -64,37 +87,40 @@ const Hero = () => {
           <img
             src={Group}
             alt="Luxury Hair"
-            // className="rounded-xl w-[260px] sm:w-[320px] lg:w-[400px] object-contain"
-            // className="rounded-xl w-[260px] sm:w-[320px] lg:w-[400px] object-contain"
+            className="rounded-xl w-[260px] sm:w-[320px] lg:w-[400px] object-contain"
           />
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative mt-12 sm:mt-16">
+      <div className="max-w-7xl w-full mx-auto relative mt-12 sm:mt-16 overflow-hidden">
+        {/* Prev */}
         <div className="absolute inset-y-0 left-0 flex items-center pl-0 sm:pl-4 z-20">
           <button
-            onClick={() => sliderRef.current.slickPrev()}
+            onClick={() => sliderRef.current?.slickPrev()}
             className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-transparent border-1
                  hover:text-white hover:bg-[var(--primary)] transition cursor-pointer duration-300 ease-in-out"
+            aria-label="previous"
           >
             <IoIosArrowRoundBack className="text-xl sm:text-2xl text-black" />
           </button>
         </div>
 
-        <div className="absolute inset-y-0 md:left-22 xs:right-0 flex items-center pr-2 sm:pr-4 z-20">
+        {/* Next */}
+        <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:pr-4 z-20">
           <button
-            onClick={() => sliderRef.current.slickNext()}
+            onClick={() => sliderRef.current?.slickNext()}
             className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-[var(--primary)] border-1 border-[var(--primary)]
                  hover:text-white hover:bg-[var(--primary)] transition cursor-pointer duration-300 ease-in-out"
+            aria-label="next"
           >
             <IoIosArrowRoundForward className="text-xl sm:text-2xl text-black" />
           </button>
         </div>
 
-        <Slider {...settings} className="px-4 md:ml-50 sm:px-6" ref={sliderRef}>
+        <Slider {...settings} className="px-4 sm:px-6" ref={sliderRef}>
           {categories.map((item, idx) => (
             <div key={idx} className="px-2 sm:px-3">
-              <div className="p-4 flex flex-col items-center gap-2 bg-white rounded-2xl shadow-sm hover:shadow-lg transition">
+              <div className="p-4 flex flex-col items-center gap-2 bg-white rounded-2xl shadow-sm hover:shadow-lg transition min-w-0">
                 <img
                   src={item.img}
                   alt={item.name}
