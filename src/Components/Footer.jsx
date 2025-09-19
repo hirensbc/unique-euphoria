@@ -44,7 +44,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 text-center lg:text-left ">
           <div>
             <h3 className="text-white font-semibold mb-4 font-mariposa">
-              {/* Unique Euphoria */}
+              
               <img src={logo} alt="" srcset="" />
             </h3>
             <p className="mb-4 text-white text-sm leading-relaxed font-montserrat">
@@ -75,7 +75,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div >
+          <div className="px-28" >
             <h3 className="text-white font-semibold  mb-4 font-mariposa">
               Quick Links
             </h3>
@@ -101,7 +101,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="px-28">
             <h3 className="text-white font-semibold mb-4 font-mariposa">
               Our Services
             </h3>
@@ -142,7 +142,7 @@ export default function Footer() {
       <div className="w-full border-b border-gray-700"></div>
 
       <div className="max-w-8xl py-4 text-white lg:px-5 flex xs:justify-center xs:items-center xs:flex-col xs:flex lg:justify-end lg:flex-row text-xs md:space-x-200">
-        <p className="mb-2 lg:mb-0  lg:text-base xs:text-[10px]">
+        <p className="mb-2 lg:mb-0  lg:text-base xs:text-[10px] md:mb-0">
           © 2025 Unique Euphoria. All rights reserved.
         </p>
         <div className="flex space-x-10 xs:space-x-1 sm:block lg:mt-0 lg:justify-end ">
